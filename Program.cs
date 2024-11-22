@@ -10,6 +10,7 @@ namespace APIConsole
         {
             string trackNo = "ff67e8ef-75dd-4c03-a736-830681c975ac";
             int suplId = 21;
+            
 
             TravayooBO obj = new TravayooBO();
             obj.APILog(trackNo, suplId);
