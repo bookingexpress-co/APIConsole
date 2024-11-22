@@ -1,0 +1,4556 @@
+{
+  "Status": {
+    "Code": 200,
+    "Description": "Successful"
+  },
+  "HotelResult": [
+    {
+      "HotelCode": "1484992",
+      "Currency": "USD",
+      "Rooms": [
+        {
+          "Name": [ "Deluxe Room (Resort),1 King Bed,NonSmoking" ],
+          "BookingCode": "1484992!TB!4!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free water park passes,Free valet parking,Free self parking",
+          "TotalFare": 4006.79,
+          "TotalTax": 753.48,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Room (Resort),2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1484992!TB!6!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free water park passes,Free valet parking,Free self parking",
+          "TotalFare": 4006.79,
+          "TotalTax": 753.48,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Room (Resort),1 King Bed,NonSmoking" ],
+          "BookingCode": "1484992!TB!13!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free water park passes,Free valet parking,Free self parking",
+          "TotalFare": 4102.23,
+          "TotalTax": 753.48,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Room (Resort),2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1484992!TB!15!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free water park passes,Free valet parking,Free self parking",
+          "TotalFare": 4102.23,
+          "TotalTax": 753.48,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        }
+      ]
+    },
+    {
+      "HotelCode": "1064575",
+      "Currency": "USD",
+      "Rooms": [
+        {
+          "Name": [ "Deluxe Twin Room, Garden View,2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1064575!TB!2!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free breakfast",
+          "TotalFare": 1561.94,
+          "TotalTax": 296.79,
+          "RoomPromotion": [],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Room, 1 King Bed, Garden View,NonSmoking" ],
+          "BookingCode": "1064575!TB!4!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free breakfast",
+          "TotalFare": 1561.94,
+          "TotalTax": 296.79,
+          "RoomPromotion": [],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Twin Room, Garden View,2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1064575!TB!3!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free dinner",
+          "TotalFare": 1586.73,
+          "TotalTax": 301.41,
+          "RoomPromotion": [],
+          "MealType": "Dinner",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Room, 1 King Bed, Garden View,NonSmoking" ],
+          "BookingCode": "1064575!TB!5!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free dinner",
+          "TotalFare": 1586.73,
+          "TotalTax": 301.41,
+          "RoomPromotion": [],
+          "MealType": "Dinner",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Twin Room, Garden View,2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1064575!TB!7!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free breakfast",
+          "TotalFare": 1615.89,
+          "TotalTax": 296.79,
+          "RoomPromotion": [],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Room, 1 King Bed, Garden View,NonSmoking" ],
+          "BookingCode": "1064575!TB!9!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free breakfast",
+          "TotalFare": 1615.89,
+          "TotalTax": 296.79,
+          "RoomPromotion": [],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Room, 1 King Bed (Desert View),NonSmoking" ],
+          "BookingCode": "1064575!TB!1!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free breakfast",
+          "TotalFare": 1726.36,
+          "TotalTax": 328.04,
+          "RoomPromotion": [],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Room, 1 King Bed (Desert View),NonSmoking" ],
+          "BookingCode": "1064575!TB!6!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free breakfast",
+          "TotalFare": 1785.98,
+          "TotalTax": 328.04,
+          "RoomPromotion": [],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Twin Room (Desert View),2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1064575!TB!10!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free breakfast",
+          "TotalFare": 1785.98,
+          "TotalTax": 328.04,
+          "RoomPromotion": [],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Room, 1 King Bed, Garden View,NonSmoking" ],
+          "BookingCode": "1064575!TB!8!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free dinner",
+          "TotalFare": 2051.14,
+          "TotalTax": 376.75,
+          "RoomPromotion": [],
+          "MealType": "Dinner",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        }
+      ]
+    },
+    {
+      "HotelCode": "1601976",
+      "Currency": "USD",
+      "Rooms": [
+        {
+          "Name": [ "Deluxe Room, 1 King Bed,NonSmoking" ],
+          "BookingCode": "1601976!TB!4!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 2181.96,
+          "TotalTax": 410.18,
+          "RoomPromotion": [ "Book now and save" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Room, 1 King Bed,NonSmoking" ],
+          "BookingCode": "1601976!TB!3!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free breakfast,Free valet parking,Free self parking",
+          "TotalFare": 2222.97,
+          "TotalTax": 418.46,
+          "RoomPromotion": [ "Book now and save" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Room, 1 King Bed,NonSmoking" ],
+          "BookingCode": "1601976!TB!9!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 2481.34,
+          "TotalTax": 455.75,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Room, 1 King Bed,NonSmoking" ],
+          "BookingCode": "1601976!TB!8!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free breakfast,Free valet parking,Free self parking",
+          "TotalFare": 2531.36,
+          "TotalTax": 464.93,
+          "RoomPromotion": [],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        }
+      ]
+    },
+    {
+      "HotelCode": "1383914",
+      "Currency": "USD",
+      "Rooms": [
+        {
+          "Name": [ "Luxury Room, 1 King Bed, City View,NonSmoking" ],
+          "BookingCode": "1383914!TB!2!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free welcome drink,Free self parking",
+          "TotalFare": 1260.67,
+          "TotalTax": 231.55,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Luxury Room, 2 Twin Beds, City View,NonSmoking" ],
+          "BookingCode": "1383914!TB!4!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free welcome drink,Free self parking",
+          "TotalFare": 1260.67,
+          "TotalTax": 231.55,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Luxury Room, 1 King Bed, City View,NonSmoking" ],
+          "BookingCode": "1383914!TB!3!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Breakfast buffet,Free welcome drink,Free self parking",
+          "TotalFare": 1319.21,
+          "TotalTax": 242.30,
+          "RoomPromotion": [],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Luxury Room, 2 Twin Beds, City View,NonSmoking" ],
+          "BookingCode": "1383914!TB!5!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Breakfast buffet,Free welcome drink,Free self parking",
+          "TotalFare": 1319.21,
+          "TotalTax": 242.30,
+          "RoomPromotion": [],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Luxury Room, 1 King Bed, City View,NonSmoking" ],
+          "BookingCode": "1383914!TB!9!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free welcome drink,Free self parking",
+          "TotalFare": 1330.74,
+          "TotalTax": 244.44,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Luxury Room, 2 Twin Beds, City View,NonSmoking" ],
+          "BookingCode": "1383914!TB!10!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free welcome drink,Free self parking",
+          "TotalFare": 1330.74,
+          "TotalTax": 244.44,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Luxury Room, 2 Twin Beds, View (Burj Khalifa),NonSmoking" ],
+          "BookingCode": "1383914!TB!1!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free welcome drink,Free self parking",
+          "TotalFare": 1356.75,
+          "TotalTax": 249.20,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Family Room, 2 Twin Beds, City View (Luxury),NonSmoking" ],
+          "BookingCode": "1383914!TB!6!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free welcome drink,Free self parking",
+          "TotalFare": 1432.14,
+          "TotalTax": 263.06,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Luxury Room, 1 King Bed, View (Burj Khalifa),NonSmoking" ],
+          "BookingCode": "1383914!TB!7!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free welcome drink,Free self parking",
+          "TotalFare": 1432.14,
+          "TotalTax": 263.06,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Family Room, 1 King Bed, City View (Luxury),NonSmoking" ],
+          "BookingCode": "1383914!TB!8!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free welcome drink,Free self parking",
+          "TotalFare": 1432.14,
+          "TotalTax": 263.06,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        }
+      ]
+    },
+    {
+      "HotelCode": "1429464",
+      "Currency": "USD",
+      "Rooms": [
+        {
+          "Name": [ "Deluxe Room,1 King Bed,NonSmoking" ],
+          "BookingCode": "1429464!TB!3!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free breakfast,Free valet parking,Free self parking",
+          "TotalFare": 900.86,
+          "TotalTax": 169.99,
+          "RoomPromotion": [],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Room,1 King Bed,NonSmoking" ],
+          "BookingCode": "1429464!TB!7!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free breakfast,Free valet parking,Free self parking",
+          "TotalFare": 925.51,
+          "TotalTax": 169.99,
+          "RoomPromotion": [],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        }
+      ]
+    },
+    {
+      "HotelCode": "1429851",
+      "Currency": "USD",
+      "Rooms": [
+        {
+          "Name": [ "Covet Room Skyline View Twin,2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1429851!TB!1!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free breakfast,Free valet parking,Free self parking",
+          "TotalFare": 2420.92,
+          "TotalTax": 459.40,
+          "RoomPromotion": [],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Covet Room Skyline View Twin,2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1429851!TB!6!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free breakfast,Free valet parking,Free self parking",
+          "TotalFare": 2501.32,
+          "TotalTax": 459.40,
+          "RoomPromotion": [],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        }
+      ]
+    },
+    {
+      "HotelCode": "1632768",
+      "Currency": "USD",
+      "Rooms": [
+        {
+          "Name": [ "Standard Room,1 King Bed,NonSmoking" ],
+          "BookingCode": "1632768!TB!1!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 937.94,
+          "TotalTax": 176.42,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Standard Room,2 Double Beds,NonSmoking" ],
+          "BookingCode": "1632768!TB!3!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 937.94,
+          "TotalTax": 176.42,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        }
+      ]
+    },
+    {
+      "HotelCode": "1014834",
+      "Currency": "USD",
+      "Rooms": [
+        {
+          "Name": [ "Studio,1 King Bed,NonSmoking" ],
+          "BookingCode": "1014834!TB!2!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 1529.35,
+          "TotalTax": 288.51,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Studio,2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1014834!TB!5!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 1529.35,
+          "TotalTax": 288.51,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Studio,1 King Bed,NonSmoking" ],
+          "BookingCode": "1014834!TB!10!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 1560.85,
+          "TotalTax": 286.69,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Studio,2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1014834!TB!13!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 1560.85,
+          "TotalTax": 286.69,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Studio,1 King Bed,NonSmoking" ],
+          "BookingCode": "1014834!TB!1!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Full Breakfast,Free valet parking,Free self parking",
+          "TotalFare": 1581.41,
+          "TotalTax": 297.76,
+          "RoomPromotion": [],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Studio,2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1014834!TB!4!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Full Breakfast,Free valet parking,Free self parking",
+          "TotalFare": 1581.41,
+          "TotalTax": 297.76,
+          "RoomPromotion": [],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Studio,1 King Bed,NonSmoking" ],
+          "BookingCode": "1014834!TB!11!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Full Breakfast,Free valet parking,Free self parking",
+          "TotalFare": 1610.88,
+          "TotalTax": 295.88,
+          "RoomPromotion": [],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Studio,2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1014834!TB!14!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Full Breakfast,Free valet parking,Free self parking",
+          "TotalFare": 1610.88,
+          "TotalTax": 295.88,
+          "RoomPromotion": [],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Executive Studio,1 King Bed,NonSmoking" ],
+          "BookingCode": "1014834!TB!8!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 1627.40,
+          "TotalTax": 307.01,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Executive Studio,1 King Bed,NonSmoking" ],
+          "BookingCode": "1014834!TB!16!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 1660.90,
+          "TotalTax": 305.06,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        }
+      ]
+    },
+    {
+      "HotelCode": "1507602",
+      "Currency": "USD",
+      "Rooms": [
+        {
+          "Name": [ "Deluxe Room, 1 King Bed,NonSmoking" ],
+          "BookingCode": "1507602!TB!1!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking",
+          "TotalFare": 3054.85,
+          "TotalTax": 608.90,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Room, 1 King Bed,NonSmoking" ],
+          "BookingCode": "1507602!TB!6!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking",
+          "TotalFare": 3315.14,
+          "TotalTax": 608.90,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Four Seasons, Room, 1 King Bed,NonSmoking" ],
+          "BookingCode": "1507602!TB!2!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking",
+          "TotalFare": 4637.72,
+          "TotalTax": 917.03,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Four Seasons, Executive Suite, 1 King Bed,NonSmoking" ],
+          "BookingCode": "1507602!TB!3!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking",
+          "TotalFare": 8587.68,
+          "TotalTax": 1698.08,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Four Seasons, Deluxe Suite, 1 King Bed,NonSmoking" ],
+          "BookingCode": "1507602!TB!4!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking",
+          "TotalFare": 9331.19,
+          "TotalTax": 1845.08,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Suite, 1 Bedroom, Terrace,1 King Bed,NonSmoking" ],
+          "BookingCode": "1507602!TB!5!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking",
+          "TotalFare": 14579.72,
+          "TotalTax": 2906.07,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Suite, 1 Bedroom, Terrace,1 King Bed,NonSmoking" ],
+          "BookingCode": "1507602!TB!7!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking",
+          "TotalFare": 15821.94,
+          "TotalTax": 2906.07,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        }
+      ]
+    },
+    {
+      "HotelCode": "1390917",
+      "Currency": "USD",
+      "Rooms": [
+        {
+          "Name": [ "Deluxe Room, 1 King Bed,NonSmoking" ],
+          "BookingCode": "1390917!TB!2!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking",
+          "TotalFare": 975.14,
+          "TotalTax": 183.77,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Room, 1 King Bed, Mobility Accessible,NonSmoking" ],
+          "BookingCode": "1390917!TB!5!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking",
+          "TotalFare": 975.14,
+          "TotalTax": 183.77,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Room, 1 King Bed,NonSmoking" ],
+          "BookingCode": "1390917!TB!7!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking",
+          "TotalFare": 989.12,
+          "TotalTax": 183.77,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Room, 1 King Bed, Mobility Accessible,NonSmoking" ],
+          "BookingCode": "1390917!TB!10!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking",
+          "TotalFare": 989.12,
+          "TotalTax": 183.77,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        }
+      ]
+    },
+    {
+      "HotelCode": "1370325",
+      "Currency": "USD",
+      "Rooms": [
+        {
+          "Name": [ "Room, 1 King Bed (Creek View),NonSmoking" ],
+          "BookingCode": "1370325!TB!4!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 634.98,
+          "TotalTax": 122.59,
+          "RoomPromotion": [ "Member’s exclusive price" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Room, 1 King Bed (Creek View),NonSmoking" ],
+          "BookingCode": "1370325!TB!5!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free breakfast,Free valet parking,Free self parking",
+          "TotalFare": 677.72,
+          "TotalTax": 130.31,
+          "RoomPromotion": [ "Member’s exclusive price" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "King Room with City View,1 King Bed,NonSmoking" ],
+          "BookingCode": "1370325!TB!1!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 720.61,
+          "TotalTax": 133.49,
+          "RoomPromotion": [ "Member’s exclusive price" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Twin Room With City View,2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1370325!TB!2!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 720.61,
+          "TotalTax": 133.49,
+          "RoomPromotion": [ "Member’s exclusive price" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "King Room with City View,1 King Bed,NonSmoking" ],
+          "BookingCode": "1370325!TB!6!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 726.80,
+          "TotalTax": 133.49,
+          "RoomPromotion": [ "Member’s price: 20%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Twin Room With City View,2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1370325!TB!8!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 726.80,
+          "TotalTax": 133.49,
+          "RoomPromotion": [ "Member’s price: 20%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Twin Room With City View,2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1370325!TB!3!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Continental breakfast,Free self parking",
+          "TotalFare": 756.34,
+          "TotalTax": 140.12,
+          "RoomPromotion": [ "Member’s exclusive price" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "King Room with City View,1 King Bed,NonSmoking" ],
+          "BookingCode": "1370325!TB!7!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Continental breakfast,Free self parking",
+          "TotalFare": 762.83,
+          "TotalTax": 140.12,
+          "RoomPromotion": [ "Member’s price: 20%" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Twin Room With City View,2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1370325!TB!9!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Continental breakfast,Free self parking",
+          "TotalFare": 762.83,
+          "TotalTax": 140.12,
+          "RoomPromotion": [ "Member’s price: 20%" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Room, 1 King Bed (Creek View),NonSmoking" ],
+          "BookingCode": "1370325!TB!10!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 762.83,
+          "TotalTax": 140.12,
+          "RoomPromotion": [ "Member’s price: 20%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        }
+      ]
+    },
+    {
+      "HotelCode": "1377265",
+      "Currency": "USD",
+      "Rooms": [
+        {
+          "Name": [ "Superior Room, 1 King Bed,NonSmoking" ],
+          "BookingCode": "1377265!TB!2!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 823.86,
+          "TotalTax": 162.94,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Superior Room, 1 King Bed,NonSmoking" ],
+          "BookingCode": "1377265!TB!1!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free breakfast,Free valet parking,Free self parking",
+          "TotalFare": 858.73,
+          "TotalTax": 169.66,
+          "RoomPromotion": [],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Superior Room, 1 King Bed,NonSmoking" ],
+          "BookingCode": "1377265!TB!4!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 887.15,
+          "TotalTax": 162.94,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Superior Room, 1 King Bed,NonSmoking" ],
+          "BookingCode": "1377265!TB!3!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free breakfast,Free valet parking,Free self parking",
+          "TotalFare": 923.82,
+          "TotalTax": 169.66,
+          "RoomPromotion": [],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 60.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        }
+      ]
+    },
+    {
+      "HotelCode": "1612230",
+      "Currency": "USD",
+      "Rooms": [
+        {
+          "Name": [ "TRYP Room,1 King Bed,NonSmoking" ],
+          "BookingCode": "1612230!TB!1!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 448.22,
+          "TotalTax": 82.71,
+          "RoomPromotion": [ "Member’s exclusive price" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "TRYP Room,1 King Bed,NonSmoking" ],
+          "BookingCode": "1612230!TB!6!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 450.24,
+          "TotalTax": 82.71,
+          "RoomPromotion": [ "Member’s price: 40%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Room, 1 King Bed,NonSmoking" ],
+          "BookingCode": "1612230!TB!3!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 478.10,
+          "TotalTax": 88.20,
+          "RoomPromotion": [ "Member’s exclusive price" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "TRYP Room High Floor,1 King Bed,NonSmoking" ],
+          "BookingCode": "1612230!TB!4!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 478.10,
+          "TotalTax": 88.20,
+          "RoomPromotion": [ "Member’s exclusive price" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Room, 1 King Bed,NonSmoking" ],
+          "BookingCode": "1612230!TB!8!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 480.27,
+          "TotalTax": 88.20,
+          "RoomPromotion": [ "Member’s price: 40%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "TRYP Room High Floor,1 King Bed,NonSmoking" ],
+          "BookingCode": "1612230!TB!9!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 480.27,
+          "TotalTax": 88.20,
+          "RoomPromotion": [ "Member’s price: 40%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "TRYP Room with Balcony,1 King Bed,NonSmoking" ],
+          "BookingCode": "1612230!TB!5!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 493.04,
+          "TotalTax": 90.95,
+          "RoomPromotion": [ "Member’s exclusive price" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "TRYP Room with Balcony,1 King Bed,NonSmoking" ],
+          "BookingCode": "1612230!TB!10!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 495.26,
+          "TotalTax": 90.95,
+          "RoomPromotion": [ "Member’s price: 40%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "TRYPLE Room,1 King Bed,NonSmoking" ],
+          "BookingCode": "1612230!TB!2!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 537.88,
+          "TotalTax": 99.25,
+          "RoomPromotion": [ "Member’s exclusive price" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "TRYPLE Room,1 King Bed,NonSmoking" ],
+          "BookingCode": "1612230!TB!7!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 540.31,
+          "TotalTax": 99.25,
+          "RoomPromotion": [ "Member’s price: 40%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        }
+      ]
+    },
+    {
+      "HotelCode": "1049374",
+      "Currency": "USD",
+      "Rooms": [
+        {
+          "Name": [ "Deluxe Room, 1 King Bed,NonSmoking" ],
+          "BookingCode": "1049374!TB!2!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 758.92,
+          "TotalTax": 140.61,
+          "RoomPromotion": [ "Member’s exclusive price" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Room, 2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1049374!TB!4!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 758.92,
+          "TotalTax": 140.61,
+          "RoomPromotion": [ "Member’s exclusive price" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Room, 1 King Bed,NonSmoking" ],
+          "BookingCode": "1049374!TB!7!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 765.59,
+          "TotalTax": 140.61,
+          "RoomPromotion": [ "Member’s price: 34%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Room, 2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1049374!TB!9!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 765.59,
+          "TotalTax": 140.61,
+          "RoomPromotion": [ "Member’s price: 34%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Room, 1 King Bed,NonSmoking" ],
+          "BookingCode": "1049374!TB!1!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free breakfast,Free valet parking,Free self parking",
+          "TotalFare": 791.51,
+          "TotalTax": 146.65,
+          "RoomPromotion": [ "Member’s exclusive price" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Room, 2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1049374!TB!3!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free breakfast,Free valet parking,Free self parking",
+          "TotalFare": 791.51,
+          "TotalTax": 146.65,
+          "RoomPromotion": [ "Member’s exclusive price" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Room, 1 King Bed,NonSmoking" ],
+          "BookingCode": "1049374!TB!6!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free breakfast,Free valet parking,Free self parking",
+          "TotalFare": 798.47,
+          "TotalTax": 146.65,
+          "RoomPromotion": [ "Member’s price: 34%" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Room, 2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1049374!TB!8!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free breakfast,Free valet parking,Free self parking",
+          "TotalFare": 798.47,
+          "TotalTax": 146.65,
+          "RoomPromotion": [ "Member’s price: 34%" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Apartment, 1 Bedroom, City View,1 King Bed,NonSmoking" ],
+          "BookingCode": "1049374!TB!5!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 847.12,
+          "TotalTax": 156.97,
+          "RoomPromotion": [ "Member’s exclusive price" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Apartment, 1 Bedroom, City View,1 King Bed,NonSmoking" ],
+          "BookingCode": "1049374!TB!10!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 854.56,
+          "TotalTax": 156.97,
+          "RoomPromotion": [ "Member’s price: 34%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        }
+      ]
+    },
+    {
+      "HotelCode": "1638653",
+      "Currency": "USD",
+      "Rooms": [
+        {
+          "Name": [ "Deluxe Twin Room,2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1638653!TB!2!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free self parking",
+          "TotalFare": 437.47,
+          "TotalTax": 82.71,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe King Room,1 King Bed,NonSmoking" ],
+          "BookingCode": "1638653!TB!3!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free self parking",
+          "TotalFare": 437.47,
+          "TotalTax": 82.71,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Twin Room,2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1638653!TB!7!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free self parking",
+          "TotalFare": 450.27,
+          "TotalTax": 82.71,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe King Room,1 King Bed,NonSmoking" ],
+          "BookingCode": "1638653!TB!9!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free self parking",
+          "TotalFare": 450.27,
+          "TotalTax": 82.71,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        }
+      ]
+    },
+    {
+      "HotelCode": "1388576",
+      "Currency": "USD",
+      "Rooms": [
+        {
+          "Name": [ "Standard Twin Room, 2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1388576!TB!5!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Room Only",
+          "TotalFare": 348.56,
+          "TotalTax": 66.15,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Standard Twin Room, 2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1388576!TB!10!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Room Only",
+          "TotalFare": 360.18,
+          "TotalTax": 66.15,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Standard Double Room, 1 King Bed,NonSmoking" ],
+          "BookingCode": "1388576!TB!2!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Room Only",
+          "TotalFare": 366.76,
+          "TotalTax": 69.45,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Standard Double Room, 1 King Bed,NonSmoking" ],
+          "BookingCode": "1388576!TB!6!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Room Only",
+          "TotalFare": 378.21,
+          "TotalTax": 69.45,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Standard Twin Room, 2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1388576!TB!4!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Breakfast for 2,Free self parking",
+          "TotalFare": 436.80,
+          "TotalTax": 82.71,
+          "RoomPromotion": [ "Private sale" ],
+          "MealType": "Breakfast_For_2",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Standard Twin Room, 2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1388576!TB!9!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Breakfast for 2,Free self parking",
+          "TotalFare": 450.27,
+          "TotalTax": 82.71,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "Breakfast_For_2",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Standard Double Room, 1 King Bed,NonSmoking" ],
+          "BookingCode": "1388576!TB!3!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Breakfast for 2,Free self parking",
+          "TotalFare": 452.97,
+          "TotalTax": 86.01,
+          "RoomPromotion": [ "Private sale" ],
+          "MealType": "Breakfast_For_2",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Standard Double Room, 1 King Bed,NonSmoking" ],
+          "BookingCode": "1388576!TB!1!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Breakfast buffet,Free self parking",
+          "TotalFare": 456.08,
+          "TotalTax": 86.01,
+          "RoomPromotion": [],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Standard Double Room, 1 King Bed,NonSmoking" ],
+          "BookingCode": "1388576!TB!7!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Breakfast for 2,Free self parking",
+          "TotalFare": 468.24,
+          "TotalTax": 86.01,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "Breakfast_For_2",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Double Room, 1 King Bed,NonSmoking" ],
+          "BookingCode": "1388576!TB!8!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Breakfast for 2",
+          "TotalFare": 486.28,
+          "TotalTax": 89.32,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "Breakfast_For_2",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        }
+      ]
+    },
+    {
+      "HotelCode": "1087049",
+      "Currency": "USD",
+      "Rooms": [
+        {
+          "Name": [ "Classic Room,1 King Bed,NonSmoking" ],
+          "BookingCode": "1087049!TB!4!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking",
+          "TotalFare": 563.74,
+          "TotalTax": 106.37,
+          "RoomPromotion": [ "Private sale" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Classic Room,1 Twin Bed,NonSmoking" ],
+          "BookingCode": "1087049!TB!8!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking",
+          "TotalFare": 563.74,
+          "TotalTax": 106.37,
+          "RoomPromotion": [ "Private sale" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Classic Room,1 King Bed,NonSmoking" ],
+          "BookingCode": "1087049!TB!12!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking",
+          "TotalFare": 579.02,
+          "TotalTax": 106.37,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Classic Room,1 Twin Bed,NonSmoking" ],
+          "BookingCode": "1087049!TB!16!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking",
+          "TotalFare": 579.02,
+          "TotalTax": 106.37,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Classic Room,1 King Bed,NonSmoking" ],
+          "BookingCode": "1087049!TB!3!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Breakfast buffet",
+          "TotalFare": 617.23,
+          "TotalTax": 116.46,
+          "RoomPromotion": [ "Private sale" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Classic Room,1 Twin Bed,NonSmoking" ],
+          "BookingCode": "1087049!TB!7!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Breakfast buffet",
+          "TotalFare": 617.23,
+          "TotalTax": 116.46,
+          "RoomPromotion": [ "Private sale" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Classic Room,1 King Bed,NonSmoking" ],
+          "BookingCode": "1087049!TB!11!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Breakfast buffet",
+          "TotalFare": 633.96,
+          "TotalTax": 116.46,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Classic Room,1 Twin Bed,NonSmoking" ],
+          "BookingCode": "1087049!TB!15!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Breakfast buffet",
+          "TotalFare": 633.96,
+          "TotalTax": 116.46,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        }
+      ]
+    },
+    {
+      "HotelCode": "1107635",
+      "Currency": "USD",
+      "Rooms": [
+        {
+          "Name": [ "Deluxe Room, 2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1107635!TB!1!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free self parking",
+          "TotalFare": 413.55,
+          "TotalTax": 80.89,
+          "RoomPromotion": [ "Member’s exclusive price" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Room, 1 King Bed,NonSmoking" ],
+          "BookingCode": "1107635!TB!3!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free self parking",
+          "TotalFare": 413.55,
+          "TotalTax": 80.89,
+          "RoomPromotion": [ "Member’s exclusive price" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Room, 2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1107635!TB!5!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free self parking",
+          "TotalFare": 440.35,
+          "TotalTax": 80.89,
+          "RoomPromotion": [ "Member’s price: 10%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Room, 1 King Bed,NonSmoking" ],
+          "BookingCode": "1107635!TB!6!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free self parking",
+          "TotalFare": 440.35,
+          "TotalTax": 80.89,
+          "RoomPromotion": [ "Member’s price: 10%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Superior Room, 2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1107635!TB!2!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free self parking",
+          "TotalFare": 464.29,
+          "TotalTax": 90.82,
+          "RoomPromotion": [ "Member’s exclusive price" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Superior Room, 1 King Bed,NonSmoking" ],
+          "BookingCode": "1107635!TB!4!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free self parking",
+          "TotalFare": 464.29,
+          "TotalTax": 90.82,
+          "RoomPromotion": [ "Member’s exclusive price" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Superior Room, 1 King Bed,NonSmoking" ],
+          "BookingCode": "1107635!TB!7!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free self parking",
+          "TotalFare": 494.38,
+          "TotalTax": 90.82,
+          "RoomPromotion": [ "Member’s price: 10%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        }
+      ]
+    },
+    {
+      "HotelCode": "1231426",
+      "Currency": "USD",
+      "Rooms": [
+        {
+          "Name": [ "Room, 1 King Bed,NonSmoking" ],
+          "BookingCode": "1231426!TB!1!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free breakfast,Free valet parking,Free self parking",
+          "TotalFare": 663.63,
+          "TotalTax": 125.71,
+          "RoomPromotion": [ "Private sale" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Room, 2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1231426!TB!3!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free breakfast,Free valet parking,Free self parking",
+          "TotalFare": 663.63,
+          "TotalTax": 125.71,
+          "RoomPromotion": [ "Private sale" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Room, 1 King Bed,NonSmoking" ],
+          "BookingCode": "1231426!TB!6!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free breakfast,Free valet parking,Free self parking",
+          "TotalFare": 684.40,
+          "TotalTax": 125.71,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Room, 2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1231426!TB!8!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free breakfast,Free valet parking,Free self parking",
+          "TotalFare": 684.40,
+          "TotalTax": 125.71,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        }
+      ]
+    },
+    {
+      "HotelCode": "1633253",
+      "Currency": "USD",
+      "Rooms": [
+        {
+          "Name": [ "Standard Room,1 King Bed,NonSmoking" ],
+          "BookingCode": "1633253!TB!1!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free self parking",
+          "TotalFare": 311.20,
+          "TotalTax": 58.65,
+          "RoomPromotion": [ "Black Friday Sale! Save 20%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Standard Room,2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1633253!TB!5!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free self parking",
+          "TotalFare": 311.20,
+          "TotalTax": 58.65,
+          "RoomPromotion": [ "Black Friday Sale! Save 20%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Standard Room,1 King Bed,NonSmoking" ],
+          "BookingCode": "1633253!TB!12!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free self parking",
+          "TotalFare": 399.19,
+          "TotalTax": 73.30,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Standard Room,2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1633253!TB!15!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free self parking",
+          "TotalFare": 399.19,
+          "TotalTax": 73.30,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Standard Room,1 King Bed,NonSmoking" ],
+          "BookingCode": "1633253!TB!11!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Full Breakfast,Free self parking",
+          "TotalFare": 449.23,
+          "TotalTax": 82.51,
+          "RoomPromotion": [],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Standard Room,2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1633253!TB!14!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Full Breakfast,Free self parking",
+          "TotalFare": 449.23,
+          "TotalTax": 82.51,
+          "RoomPromotion": [],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Superior Room (Autodrome Track View),1 King Bed,NonSmoking" ],
+          "BookingCode": "1633253!TB!18!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free self parking",
+          "TotalFare": 449.23,
+          "TotalTax": 82.51,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Superior Room (Autodrome Track View),2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1633253!TB!20!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free self parking",
+          "TotalFare": 449.23,
+          "TotalTax": 82.51,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        }
+      ]
+    },
+    {
+      "HotelCode": "1629155",
+      "Currency": "USD",
+      "Rooms": [
+        {
+          "Name": [ "Studio,1 King Bed,NonSmoking" ],
+          "BookingCode": "1629155!TB!4!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 511.94,
+          "TotalTax": 99.60,
+          "RoomPromotion": [ "Member’s exclusive price" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 30.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Studio,1 King Bed,NonSmoking" ],
+          "BookingCode": "1629155!TB!9!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 542.13,
+          "TotalTax": 99.60,
+          "RoomPromotion": [ "Member’s price: 10%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 30.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Studio,1 King Bed,NonSmoking" ],
+          "BookingCode": "1629155!TB!3!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free breakfast,Free valet parking,Free self parking",
+          "TotalFare": 620.72,
+          "TotalTax": 120.71,
+          "RoomPromotion": [ "Member’s exclusive price" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 30.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Studio,1 King Bed,NonSmoking" ],
+          "BookingCode": "1629155!TB!8!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free breakfast,Free valet parking,Free self parking",
+          "TotalFare": 657.35,
+          "TotalTax": 120.71,
+          "RoomPromotion": [ "Member’s price: 10%" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 30.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Studio,1 King Bed,NonSmoking" ],
+          "BookingCode": "1629155!TB!1!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Full board",
+          "TotalFare": 731.29,
+          "TotalTax": 142.24,
+          "RoomPromotion": [ "Member’s exclusive price" ],
+          "MealType": "Full_Board",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 30.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Studio,1 King Bed,NonSmoking" ],
+          "BookingCode": "1629155!TB!6!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Full board",
+          "TotalFare": 774.43,
+          "TotalTax": 142.24,
+          "RoomPromotion": [ "Member’s price: 10%" ],
+          "MealType": "Full_Board",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 30.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Studio,1 King Bed,NonSmoking" ],
+          "BookingCode": "1629155!TB!2!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Half board",
+          "TotalFare": 807.79,
+          "TotalTax": 157.10,
+          "RoomPromotion": [ "Member’s exclusive price" ],
+          "MealType": "Half_Board",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 30.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Studio,1 King Bed,NonSmoking" ],
+          "BookingCode": "1629155!TB!7!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Half board",
+          "TotalFare": 855.44,
+          "TotalTax": 157.10,
+          "RoomPromotion": [ "Member’s price: 10%" ],
+          "MealType": "Half_Board",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 30.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Apartment, 1 Bedroom, City View,1 King Bed and 1 Double Sofa Bed,NonSmoking" ],
+          "BookingCode": "1629155!TB!5!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 877.52,
+          "TotalTax": 170.66,
+          "RoomPromotion": [ "Member’s exclusive price" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 30.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Apartment, 1 Bedroom, City View,1 King Bed and 1 Double Sofa Bed,NonSmoking" ],
+          "BookingCode": "1629155!TB!10!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 929.27,
+          "TotalTax": 170.66,
+          "RoomPromotion": [ "Member’s price: 10%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 30.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        }
+      ]
+    },
+    {
+      "HotelCode": "1538751",
+      "Currency": "USD",
+      "Rooms": [
+        {
+          "Name": [ "Superior Double Room,1 Queen Bed,NonSmoking" ],
+          "BookingCode": "1538751!TB!2!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free self parking",
+          "TotalFare": 355.65,
+          "TotalTax": 66.96,
+          "RoomPromotion": [ "Member’s exclusive price" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Double or Twin Room,1 Queen Bed,NonSmoking" ],
+          "BookingCode": "1538751!TB!4!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free self parking",
+          "TotalFare": 371.13,
+          "TotalTax": 69.90,
+          "RoomPromotion": [ "Member’s exclusive price" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Double or Twin Room,1 Twin Bed,NonSmoking" ],
+          "BookingCode": "1538751!TB!6!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free self parking",
+          "TotalFare": 371.13,
+          "TotalTax": 69.90,
+          "RoomPromotion": [ "Member’s exclusive price" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Superior Double Room,1 Queen Bed,NonSmoking" ],
+          "BookingCode": "1538751!TB!1!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free breakfast,Free self parking",
+          "TotalFare": 393.39,
+          "TotalTax": 74.63,
+          "RoomPromotion": [ "Member’s exclusive price" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Superior Double Room,1 Queen Bed,NonSmoking" ],
+          "BookingCode": "1538751!TB!8!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free self parking",
+          "TotalFare": 405.00,
+          "TotalTax": 74.37,
+          "RoomPromotion": [ "Member’s price: 20%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Double or Twin Room,1 Queen Bed,NonSmoking" ],
+          "BookingCode": "1538751!TB!12!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free self parking",
+          "TotalFare": 422.64,
+          "TotalTax": 77.64,
+          "RoomPromotion": [ "Member’s price: 20%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Double or Twin Room,1 Twin Bed,NonSmoking" ],
+          "BookingCode": "1538751!TB!14!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free self parking",
+          "TotalFare": 422.64,
+          "TotalTax": 77.64,
+          "RoomPromotion": [ "Member’s price: 20%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        }
+      ]
+    },
+    {
+      "HotelCode": "1075077",
+      "Currency": "USD",
+      "Rooms": [
+        {
+          "Name": [ "Deluxe Room,1 King Bed,NonSmoking" ],
+          "BookingCode": "1075077!TB!1!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free self parking",
+          "TotalFare": 309.09,
+          "TotalTax": 34.05,
+          "RoomPromotion": [ "Private sale" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 30.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Room,2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1075077!TB!4!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free self parking",
+          "TotalFare": 309.09,
+          "TotalTax": 34.05,
+          "RoomPromotion": [ "Private sale" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 30.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Room,1 King Bed,NonSmoking" ],
+          "BookingCode": "1075077!TB!3!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free breakfast,Free self parking",
+          "TotalFare": 336.65,
+          "TotalTax": 37.44,
+          "RoomPromotion": [ "Private sale" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 30.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Room,2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1075077!TB!6!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free breakfast,Free self parking",
+          "TotalFare": 336.65,
+          "TotalTax": 37.44,
+          "RoomPromotion": [ "Private sale" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 30.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Room,1 King Bed,NonSmoking" ],
+          "BookingCode": "1075077!TB!11!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free self parking",
+          "TotalFare": 352.98,
+          "TotalTax": 37.80,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 30.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Room,2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1075077!TB!14!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free self parking",
+          "TotalFare": 352.98,
+          "TotalTax": 37.80,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 30.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Room,1 King Bed,NonSmoking" ],
+          "BookingCode": "1075077!TB!10!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free breakfast,Free self parking",
+          "TotalFare": 388.29,
+          "TotalTax": 41.61,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 30.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Room,2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1075077!TB!13!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free breakfast,Free self parking",
+          "TotalFare": 388.29,
+          "TotalTax": 41.61,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 30.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Suite,1 King Bed,NonSmoking" ],
+          "BookingCode": "1075077!TB!8!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free self parking",
+          "TotalFare": 529.82,
+          "TotalTax": 58.35,
+          "RoomPromotion": [ "Private sale" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 30.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Suite,1 King Bed,NonSmoking" ],
+          "BookingCode": "1075077!TB!15!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free self parking",
+          "TotalFare": 605.13,
+          "TotalTax": 64.83,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 30.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        }
+      ]
+    },
+    {
+      "HotelCode": "1367244",
+      "Currency": "USD",
+      "Rooms": [
+        {
+          "Name": [ "Junior Suite,1 King Bed,NonSmoking" ],
+          "BookingCode": "1367244!TB!2!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 217.96,
+          "TotalTax": 41.36,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Superior Twin Room, 2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1367244!TB!4!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 217.96,
+          "TotalTax": 41.36,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Junior Suite,1 King Bed,NonSmoking" ],
+          "BookingCode": "1367244!TB!7!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 225.11,
+          "TotalTax": 41.36,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Superior Twin Room, 2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1367244!TB!10!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 225.11,
+          "TotalTax": 41.36,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        }
+      ]
+    },
+    {
+      "HotelCode": "1052468",
+      "Currency": "USD",
+      "Rooms": [
+        {
+          "Name": [ "Apartment, 2 Bedrooms,1 King Bed and 2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1052468!TB!2!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free internet",
+          "TotalFare": 729.69,
+          "TotalTax": 141.45,
+          "RoomPromotion": [ "Private sale" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Apartment, 2 Bedrooms,1 King Bed and 2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1052468!TB!1!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free internet,Free self parking",
+          "TotalFare": 777.04,
+          "TotalTax": 150.35,
+          "RoomPromotion": [ "Private sale" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Apartment, 3 Bedrooms,1 King Bed, 1 Queen Bed and 1 Twin Bed,NonSmoking" ],
+          "BookingCode": "1052468!TB!3!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free internet,Free self parking",
+          "TotalFare": 845.91,
+          "TotalTax": 163.73,
+          "RoomPromotion": [ "Private sale" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Apartment, 2 Bedrooms,1 King Bed and 2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1052468!TB!4!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free internet,Free self parking",
+          "TotalFare": 900.49,
+          "TotalTax": 165.40,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Apartment, 3 Bedrooms,1 King Bed, 1 Queen Bed and 1 Twin Bed,NonSmoking" ],
+          "BookingCode": "1052468!TB!6!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free internet,Free self parking",
+          "TotalFare": 990.55,
+          "TotalTax": 181.96,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        }
+      ]
+    },
+    {
+      "HotelCode": "1383932",
+      "Currency": "USD",
+      "Rooms": [
+        {
+          "Name": [ "Standard Room King/Twin,1 Double Bed,NonSmoking" ],
+          "BookingCode": "1383932!TB!3!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 471.52,
+          "TotalTax": 89.32,
+          "RoomPromotion": [ "Private sale" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Standard Room King/Twin,1 Double Bed,NonSmoking" ],
+          "BookingCode": "1383932!TB!2!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 472.23,
+          "TotalTax": 89.32,
+          "RoomPromotion": [],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Standard Room King/Twin,1 Double Bed,NonSmoking" ],
+          "BookingCode": "1383932!TB!6!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking,Free self parking",
+          "TotalFare": 486.28,
+          "TotalTax": 89.32,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Room King/Twin,1 Double Bed,NonSmoking" ],
+          "BookingCode": "1383932!TB!8!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free breakfast,Free valet parking,Free self parking",
+          "TotalFare": 630.37,
+          "TotalTax": 115.81,
+          "RoomPromotion": [ "Member’s price: 10%" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        }
+      ]
+    },
+    {
+      "HotelCode": "1090975",
+      "Currency": "USD",
+      "Rooms": [
+        {
+          "Name": [ "Room, 1 Queen Bed, Non Smoking" ],
+          "BookingCode": "1090975!TB!8!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free self parking",
+          "TotalFare": 765.41,
+          "TotalTax": 140.57,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        }
+      ]
+    },
+    {
+      "HotelCode": "1577169",
+      "Currency": "USD",
+      "Rooms": [
+        {
+          "Name": [ "Deluxe Double Room,1 Double Bed,NonSmoking" ],
+          "BookingCode": "1577169!TB!1!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking",
+          "TotalFare": 349.85,
+          "TotalTax": 66.15,
+          "RoomPromotion": [ "Private sale" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Double Room,2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1577169!TB!3!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking",
+          "TotalFare": 349.85,
+          "TotalTax": 66.15,
+          "RoomPromotion": [ "Private sale" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Double Room,1 Double Bed,NonSmoking" ],
+          "BookingCode": "1577169!TB!7!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking",
+          "TotalFare": 360.18,
+          "TotalTax": 66.15,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Double Room,2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1577169!TB!9!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking",
+          "TotalFare": 360.18,
+          "TotalTax": 66.15,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Twin Room,1 Twin Bed,NonSmoking" ],
+          "BookingCode": "1577169!TB!5!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking",
+          "TotalFare": 393.58,
+          "TotalTax": 74.42,
+          "RoomPromotion": [ "Private sale" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Twin Room,1 Twin Bed,NonSmoking" ],
+          "BookingCode": "1577169!TB!11!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free valet parking",
+          "TotalFare": 405.23,
+          "TotalTax": 74.42,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Double Room,1 Double Bed,NonSmoking" ],
+          "BookingCode": "1577169!TB!2!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free breakfast,Free valet parking,Free self parking",
+          "TotalFare": 423.32,
+          "TotalTax": 80.04,
+          "RoomPromotion": [ "Private sale" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Double Room,2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1577169!TB!4!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free breakfast,Free valet parking,Free self parking",
+          "TotalFare": 423.32,
+          "TotalTax": 80.04,
+          "RoomPromotion": [ "Private sale" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Double Room,1 Double Bed,NonSmoking" ],
+          "BookingCode": "1577169!TB!8!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free breakfast,Free valet parking,Free self parking",
+          "TotalFare": 435.81,
+          "TotalTax": 80.04,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Double Room,2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1577169!TB!10!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free breakfast,Free valet parking,Free self parking",
+          "TotalFare": 435.81,
+          "TotalTax": 80.04,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Twin Room,1 Twin Bed,NonSmoking" ],
+          "BookingCode": "1577169!TB!6!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free breakfast,Free valet parking,Free self parking",
+          "TotalFare": 467.04,
+          "TotalTax": 88.30,
+          "RoomPromotion": [ "Private sale" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Twin Room,1 Twin Bed,NonSmoking" ],
+          "BookingCode": "1577169!TB!12!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free breakfast,Free valet parking,Free self parking",
+          "TotalFare": 480.85,
+          "TotalTax": 88.30,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        }
+      ]
+    },
+    {
+      "HotelCode": "1052999",
+      "Currency": "USD",
+      "Rooms": [
+        {
+          "Name": [ "Deluxe Twin Room,1 King Bed,NonSmoking" ],
+          "BookingCode": "1052999!TB!4!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free breakfast",
+          "TotalFare": 317.01,
+          "TotalTax": 60.37,
+          "RoomPromotion": [ "Private sale" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Twin Room,1 King Bed,NonSmoking" ],
+          "BookingCode": "1052999!TB!9!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free breakfast",
+          "TotalFare": 328.66,
+          "TotalTax": 60.37,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        }
+      ]
+    },
+    {
+      "HotelCode": "1107835",
+      "Currency": "USD",
+      "Rooms": [
+        {
+          "Name": [ "Deluxe Double-King,1 King Bed,NonSmoking" ],
+          "BookingCode": "1107835!TB!1!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free self parking",
+          "TotalFare": 480.76,
+          "TotalTax": 90.67,
+          "RoomPromotion": [ "Member’s exclusive price" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Double-King,1 King Bed,NonSmoking" ],
+          "BookingCode": "1107835!TB!7!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free self parking",
+          "TotalFare": 493.63,
+          "TotalTax": 90.67,
+          "RoomPromotion": [ "Member’s price: 15%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Double-King,1 King Bed,NonSmoking" ],
+          "BookingCode": "1107835!TB!6!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Continental breakfast,Free self parking",
+          "TotalFare": 510.97,
+          "TotalTax": 93.85,
+          "RoomPromotion": [ "Member’s price: 15%" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        }
+      ]
+    },
+    {
+      "HotelCode": "1387947",
+      "Currency": "USD",
+      "Rooms": [
+        {
+          "Name": [ "Deluxe Studio, Balcony,1 Double Bed,NonSmoking" ],
+          "BookingCode": "1387947!TB!2!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free self parking",
+          "TotalFare": 237.49,
+          "TotalTax": 44.66,
+          "RoomPromotion": [ "Private sale" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Studio, Balcony,1 Double Bed,NonSmoking" ],
+          "BookingCode": "1387947!TB!9!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free self parking",
+          "TotalFare": 270.18,
+          "TotalTax": 49.65,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Studio, Balcony,1 Double Bed,NonSmoking" ],
+          "BookingCode": "1387947!TB!3!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free breakfast",
+          "TotalFare": 294.31,
+          "TotalTax": 55.64,
+          "RoomPromotion": [ "Private sale" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Deluxe Studio, Balcony,1 Double Bed,NonSmoking" ],
+          "BookingCode": "1387947!TB!6!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Free breakfast",
+          "TotalFare": 336.76,
+          "TotalTax": 61.84,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "BreakFast",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_tax",
+                "Price": 45.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        }
+      ]
+    },
+    {
+      "HotelCode": "1107947",
+      "Currency": "USD",
+      "Rooms": [
+        {
+          "Name": [ "Standard Room,2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1107947!TB!2!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Room Only",
+          "TotalFare": 710.79,
+          "TotalTax": 101.70,
+          "RoomPromotion": [ "Private sale" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_fee,mandatory_tax",
+                "Price": 450.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Standard Room,2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1107947!TB!5!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Room Only",
+          "TotalFare": 806.85,
+          "TotalTax": 86.46,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_fee,mandatory_tax",
+                "Price": 450.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Standard Twin Room,2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1107947!TB!3!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Room Only",
+          "TotalFare": 888.45,
+          "TotalTax": 127.08,
+          "RoomPromotion": [ "Private sale" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_fee,mandatory_tax",
+                "Price": 450.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Standard Twin Room,2 Twin Beds,NonSmoking" ],
+          "BookingCode": "1107947!TB!6!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Room Only",
+          "TotalFare": 1008.54,
+          "TotalTax": 108.06,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_fee,mandatory_tax",
+                "Price": 450.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Signature Suite,2 King Beds,NonSmoking" ],
+          "BookingCode": "1107947!TB!1!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Room Only",
+          "TotalFare": 1066.13,
+          "TotalTax": 152.49,
+          "RoomPromotion": [ "Private sale" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_fee,mandatory_tax",
+                "Price": 450.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        },
+        {
+          "Name": [ "Signature Suite,2 King Beds,NonSmoking" ],
+          "BookingCode": "1107947!TB!4!TB!261b8cce-a4d0-49a7-bb3c-222b6a804de1",
+          "Inclusion": "Room Only",
+          "TotalFare": 1210.26,
+          "TotalTax": 129.66,
+          "RoomPromotion": [ "Private sale: save 10%" ],
+          "MealType": "Room_Only",
+          "IsRefundable": true,
+          "Supplements": [
+            [
+              {
+                "Index": 1,
+                "Type": "AtProperty",
+                "Description": "mandatory_fee,mandatory_tax",
+                "Price": 450.00,
+                "Currency": "AED"
+              }
+            ]
+          ],
+          "WithTransfers": false
+        }
+      ]
+    }
+  ]
+}

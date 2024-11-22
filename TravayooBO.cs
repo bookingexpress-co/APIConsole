@@ -33,27 +33,44 @@ namespace APIConsole
         string constr = ConfigurationManager.ConnectionStrings["INGMContext"].ConnectionString;
         public async Task<List<APILogModel>> GetSearchLogAsync(string trackNo, int supplier)
         {
-           var lstLog = new List<APILogModel>();
-            string sql = @"select * from tblSimulationResult where resultid in (1,2)";
-            using (var conn = new SqlConnection(constr))
-            using (var cmd = conn.CreateCommand())
+            try
             {
-                conn.Open();
-                cmd.CommandText = sql;
-                //cmd.Parameters.AddWithValue("@id", supplier);
-                using (var reader = await cmd.ExecuteReaderAsync())
+
+
+                var lstLog = new List<APILogModel>();
+                string sql = @"Select * from tblapilog_search x where x.SupplierID=@SupplierId and x.TrackNumber=@TrackNumber";
+                using (var conn = new SqlConnection(constr))
+                using (var cmd = conn.CreateCommand())
                 {
-                    if (reader.Read())
+                    conn.Open();
+                    cmd.CommandText = sql;
+                    cmd.Parameters.AddWithValue("@SupplierId", supplier);
+                    cmd.Parameters.AddWithValue("@TrackNumber", trackNo);
+                    using (var reader = await cmd.ExecuteReaderAsync())
                     {
-                        var obj = new APILogModel();
-                        obj.Supplier = supplier;
-                        obj.TrackNo = trackNo;
-                        obj.Request = reader.GetString(reader.GetOrdinal("ResultXML"));
-                        lstLog.Add(obj);
+                        while (reader.Read())
+                        {
+                            var obj = new APILogModel();
+                            obj.Supplier = supplier;
+                            obj.TrackNo = trackNo;
+                            obj.LogId = (int)reader.GetInt64(reader.GetOrdinal("logID"));
+                            obj.Request = reader.GetString(reader.GetOrdinal("logrequestXML"));
+                            obj.Response = reader.GetString(reader.GetOrdinal("logresponseXML"));
+                            lstLog.Add(obj);
+                        }
                     }
                 }
+                return lstLog.OrderBy(x => x.LogId).ToList();
+
+
             }
-            return lstLog.OrderBy(x=>x.LogId).ToList();
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+
+
         }
 
 
