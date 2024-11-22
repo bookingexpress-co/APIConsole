@@ -8,14 +8,14 @@ namespace APIConsole
     {
         static void Main(string[] args)
         {
-            string trackNo = "a2b4ac4a-6274-4ef2-aab1-6c36a2d5f76d";
+            string trackNo = "ff67e8ef-75dd-4c03-a736-830681c975ac";
             int suplId = 21;
 
             TravayooBO obj = new TravayooBO();
-            obj.HotelSearch(trackNo, suplId);
-            obj.RoomSearch(trackNo, suplId);
-            obj.Prebook(trackNo, suplId);
-            obj.Book(trackNo, suplId);
+            obj.APILog(trackNo, suplId);
+            //obj.RoomSearch(trackNo, suplId);
+            //obj.Prebook(trackNo, suplId);
+            //obj.Book(trackNo, suplId);
 
 
 

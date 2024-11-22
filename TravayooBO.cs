@@ -30,7 +30,7 @@ namespace APIConsole
 
     public class TravayooBO
     {
-
+        string BasePath = CommonHelper.BasePath() + @"\App_Data\HotelAPI\";
         string constr = ConfigurationManager.ConnectionStrings["INGMContext"].ConnectionString;
         public async Task<List<APILogModel>> GetSearchLogAsync(string trackNo, int supplier)
         {
@@ -117,26 +117,89 @@ namespace APIConsole
 
 
         }
+        public void SaveFile(List<APILogModel> lstLog, string fileName)
+        {
+            int index = 0;
+            foreach (var item in lstLog)
+            {
+
+                if (!string.IsNullOrEmpty(item.Request))
+                {
+                    string filePath = BasePath + fileName + string.Format("Request-{0}.json", index);
+                    File.WriteAllText(filePath, item.Request);
+                }
+                if (!string.IsNullOrEmpty(item.Response))
+                {
+                    string filePath = BasePath + fileName + string.Format("Response-{0}.json", index);
+                    File.WriteAllText(filePath, item.Request);
+                }
+                ++index;
+            }
+        }
+
+
+        public void APILog(string trackNo, int suplId)
+        {
+            var folder = new DirectoryInfo(BasePath);
+            foreach (FileInfo file in folder.GetFiles())
+            {
+                file.Delete();
+            }
+
+            string htlSql = @"Select * from tblapilog_search x where x.SupplierID=@SupplierId and x.TrackNumber=@TrackNumber";
+            var htlData = this.GetLogAsync(trackNo, suplId, htlSql);
+            this.SaveFile(htlData.Result, "HotelSearch");
+
+            string rmSql = @"Select * from tblapilog_room x where x.SupplierID=@SupplierId and x.TrackNumber=@TrackNumber";
+            var rmData = this.GetLogAsync(trackNo, suplId, rmSql);
+            this.SaveFile(rmData.Result, "RoomSearch");
+
+            string prSql = @"Select * from tblapilog x where x.SupplierID=@SupplierId and x.logTypeID = 4 and x.TrackNumber=@TrackNumber";
+
+            var prData = this.GetLogAsync(trackNo, suplId, prSql);
+            this.SaveFile(prData.Result, "PreBook");
+
+            string sql = @"Select * from tblapilog x where x.SupplierID=@SupplierId and x.logTypeID = 5 and x.TrackNumber=@TrackNumber";
+            var data = this.GetLogAsync(trackNo, suplId, sql);
+            this.SaveFile(data.Result, "Booking");
+
+        }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
         public void HotelSearch(string trackNo, int suplId)
         {
-            var basePath = CommonHelper.BasePath() + @"\App_Data\B2B\HotelSearch\";
-            string sql = @"Select * from tblapilog_search x where x.SupplierID=@SupplierId and x.TrackNumber=@TrackNumber";
 
-            
+
+            string sql = @"Select * from tblapilog_search x where x.SupplierID=@SupplierId and x.TrackNumber=@TrackNumber";
             var data = this.GetLogAsync(trackNo, suplId, sql);
             int index = 0;
             foreach (var item in data.Result)
             {
+                var folder = new DirectoryInfo(BasePath);
+                foreach (FileInfo file in folder.GetFiles())
+                {
+                    file.Delete();
+                }
                 if (!string.IsNullOrEmpty(item.Request))
                 {
-                    File.WriteAllText(basePath + string.Format("HotelSearchReq-{0}.json", index), item.Request);
+                    string filePath = BasePath + string.Format("HotelSearchReq-{0}.json", index);
+                    File.WriteAllText(filePath, item.Request);
                 }
                 if (!string.IsNullOrEmpty(item.Response))
                 {
-                    File.WriteAllText(basePath + string.Format("HotelSearchResp-{0}.json", index), item.Response);
+                    File.WriteAllText(BasePath + string.Format("HotelSearchResp-{0}.json", index), item.Response);
                 }
                 ++index;
             }
@@ -170,7 +233,7 @@ namespace APIConsole
             var basePath = CommonHelper.BasePath() + @"\App_Data\B2B\Prebook\";
 
             string sql = @"Select * from tblapilog x where x.SupplierID=@SupplierId and x.logTypeID = 4 and x.TrackNumber=@TrackNumber";
-            
+
             var data = this.GetLogAsync(trackNo, suplId, sql);
             int index = 0;
             foreach (var item in data.Result)
