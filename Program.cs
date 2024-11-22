@@ -8,7 +8,7 @@ namespace APIConsole
     {
         static void Main(string[] args)
         {
-            var basePath = CommonHelper.BasePath() + @"\App_Data\HB\";
+            var basePath = CommonHelper.BasePath() + @"\App_Data\B2B\HotelSearch\";
             var objBL = new TravayooBO();
             var data = objBL.GetSearchLogAsync("Test", 21);
             int index = 0;
@@ -17,7 +17,7 @@ namespace APIConsole
 
                 if (!string.IsNullOrEmpty(item.Request))
                 {
-                    File.WriteAllText(basePath + string.Format("HBSRESP-{0}.json", DateTime.Now.Ticks), item.Request);
+                    File.WriteAllText(basePath + string.Format("HotelSearch-{0}.json", index), item.Request);
                 }
 
                 ++index;
