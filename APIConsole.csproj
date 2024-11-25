@@ -52,10 +52,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\B2B\Book\" />
-    <Folder Include="App_Data\B2B\HotelSearch\" />
-    <Folder Include="App_Data\B2B\PreBook\" />
-    <Folder Include="App_Data\B2B\RoomSearch\" />
     <Folder Include="App_Data\HotelAPI\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
