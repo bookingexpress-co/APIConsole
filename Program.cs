@@ -14,10 +14,10 @@ namespace APIConsole
             Console.WriteLine(DateTime.Now.ToString());
             TravayooBO obj = new TravayooBO();
             var logPath = obj.CreateIfMissing("Case-01");
-            obj.APILog(trackNo, suplId, logPath);
+            obj.APILog(trackNo, suplId, logPath,"json");
             Console.WriteLine(DateTime.Now.ToString());
             Console.ReadLine();
-            //Console.r
+            
         }
 
 
