@@ -157,10 +157,9 @@ namespace APIConsole
             {
                 file.Delete();
             }
+
             string htlSql = @"Select * from tblapilog_search x where x.SupplierID=@SupplierId and x.TrackNumber=@TrackNumber";
             var htlData = this.GetLogAsync(trackNo, suplId, htlSql);
-
-
             this.SaveFile(htlData.Result, logPath + "HotelSearch", _type);
 
             string rmSql = @"Select * from tblapilog_room x where x.SupplierID=@SupplierId and x.TrackNumber=@TrackNumber";
@@ -168,7 +167,6 @@ namespace APIConsole
             this.SaveFile(rmData.Result, logPath + "RoomSearch", _type);
 
             string prSql = @"Select * from tblapilog x where x.SupplierID=@SupplierId and x.logTypeID = 4 and x.TrackNumber=@TrackNumber";
-
             var prData = this.GetLogAsync(trackNo, suplId, prSql);
             this.SaveFile(prData.Result, logPath + "PreBook", _type);
 
