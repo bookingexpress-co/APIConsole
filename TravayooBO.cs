@@ -131,7 +131,7 @@ namespace APIConsole
                 if (!string.IsNullOrEmpty(item.Response))
                 {
                     string filePath = BasePath + fileName + string.Format("Response-{0}.json", index);
-                    File.WriteAllText(filePath, item.Request);
+                    File.WriteAllText(filePath, item.Response);
                 }
                 ++index;
             }
