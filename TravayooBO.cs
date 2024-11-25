@@ -6,6 +6,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -117,20 +118,19 @@ namespace APIConsole
 
 
         }
-        public void SaveFile(List<APILogModel> lstLog, string fileName)
+        public void SaveFile(List<APILogModel> lstLog, string logpath)
         {
             int index = 0;
             foreach (var item in lstLog)
             {
-
                 if (!string.IsNullOrEmpty(item.Request))
                 {
-                    string filePath = BasePath + fileName + string.Format("Request-{0}.json", index);
+                    string filePath = logpath + string.Format("Request-{0}.json", index);
                     File.WriteAllText(filePath, item.Request);
                 }
                 if (!string.IsNullOrEmpty(item.Response))
                 {
-                    string filePath = BasePath + fileName + string.Format("Response-{0}.json", index);
+                    string filePath = logpath + string.Format("Response-{0}.json", index);
                     File.WriteAllText(filePath, item.Response);
                 }
                 ++index;
@@ -138,30 +138,56 @@ namespace APIConsole
         }
 
 
-        public void APILog(string trackNo, int suplId)
+
+
+        public string CreateIfMissing(string path)
         {
-            var folder = new DirectoryInfo(BasePath);
+            string logPath = BasePath + path;
+            bool folderExists = Directory.Exists(logPath);
+            if (!folderExists)
+                Directory.CreateDirectory(logPath);
+            return logPath;
+        }
+
+
+        public void APILog(string trackNo, int suplId, string logPath)
+        {
+            var folder = new DirectoryInfo(logPath);
             foreach (FileInfo file in folder.GetFiles())
             {
                 file.Delete();
             }
 
+
+
+
+
+
+
+
+
+
+
+
+
             string htlSql = @"Select * from tblapilog_search x where x.SupplierID=@SupplierId and x.TrackNumber=@TrackNumber";
             var htlData = this.GetLogAsync(trackNo, suplId, htlSql);
-            this.SaveFile(htlData.Result, "HotelSearch");
+
+
+            this.SaveFile(htlData.Result, logPath + "HotelSearch");
 
             string rmSql = @"Select * from tblapilog_room x where x.SupplierID=@SupplierId and x.TrackNumber=@TrackNumber";
             var rmData = this.GetLogAsync(trackNo, suplId, rmSql);
-            this.SaveFile(rmData.Result, "RoomSearch");
+            this.SaveFile(rmData.Result, logPath + "RoomSearch");
 
             string prSql = @"Select * from tblapilog x where x.SupplierID=@SupplierId and x.logTypeID = 4 and x.TrackNumber=@TrackNumber";
 
             var prData = this.GetLogAsync(trackNo, suplId, prSql);
-            this.SaveFile(prData.Result, "PreBook");
+            this.SaveFile(prData.Result, logPath + "PreBook");
 
             string sql = @"Select * from tblapilog x where x.SupplierID=@SupplierId and x.logTypeID = 5 and x.TrackNumber=@TrackNumber";
             var data = this.GetLogAsync(trackNo, suplId, sql);
-            this.SaveFile(data.Result, "Booking");
+            this.SaveFile(data.Result, logPath + "Booking");
 
         }
 
@@ -178,7 +204,7 @@ namespace APIConsole
 
 
 
-      
+
     }
 
 

@@ -13,11 +13,8 @@ namespace APIConsole
             Console.WriteLine("start");
             Console.WriteLine(DateTime.Now.ToString());
             TravayooBO obj = new TravayooBO();
-            obj.APILog(trackNo, suplId);
-            //obj.RoomSearch(trackNo, suplId);
-            //obj.Prebook(trackNo, suplId);
-            //obj.Book(trackNo, suplId);
-
+            var logPath = obj.CreateIfMissing("Case-01");
+            obj.APILog(trackNo, suplId, logPath);
             Console.WriteLine(DateTime.Now.ToString());
             Console.ReadLine();
             //Console.r
