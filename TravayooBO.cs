@@ -163,6 +163,11 @@ namespace APIConsole
             var data = this.GetLogAsync(trackNo, suplId, sql);
             this.SaveFile(data.Result, "Booking");
 
+
+            string bokSql = @"Select * from tblapilog x where x.SupplierID=@SupplierId and x.logTypeID = 7 and x.TrackNumber=@TrackNumber";
+            var bokData = this.GetLogAsync(trackNo, suplId, bokSql);
+            this.SaveFile(bokData.Result, "BookingDetail");
+
         }
 
 
