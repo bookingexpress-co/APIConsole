@@ -1,4 +1,6 @@
 ﻿using APIConsole.Helpers;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -6,9 +8,8 @@ using System.Data;
 using System.Data.SqlClient;
 using System.IO;
 using System.Linq;
-using System.Reflection;
-using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace APIConsole
 {
@@ -23,16 +24,11 @@ namespace APIConsole
         public int LogId { get; set; }
     }
 
-
-
-
-
-
-
     public class TravayooBO
     {
         string BasePath = CommonHelper.BasePath() + @"\App_Data\HotelAPI\";
-        string constr = ConfigurationManager.ConnectionStrings["INGMContext"].ConnectionString;
+        string constr = ConfigurationManager.ConnectionStrings["INGMContext.Live"].ConnectionString;
+
         public async Task<List<APILogModel>> GetSearchLogAsync(string trackNo, int supplier)
         {
             try
@@ -74,10 +70,6 @@ namespace APIConsole
 
 
         }
-
-
-
-
 
         public async Task<List<APILogModel>> GetLogAsync(string trackNo, int supplier, string sqlQuery)
         {
@@ -130,16 +122,15 @@ namespace APIConsole
                 }
                 if (!string.IsNullOrEmpty(item.Response))
                 {
+                    var rspString = item.Response.GetJsonFromXml();
+
+
                     string filePath = logpath + string.Format("Response-{0}.{1}", index, _type);
                     File.WriteAllText(filePath, item.Response);
                 }
                 ++index;
             }
         }
-
-
-
-
         public string CreateIfMissing(string path)
         {
             string logPath = BasePath + path;
@@ -148,7 +139,6 @@ namespace APIConsole
                 Directory.CreateDirectory(logPath);
             return logPath;
         }
-
 
         public void APILog(string trackNo, int suplId, string logPath, string _type)
         {
@@ -174,11 +164,40 @@ namespace APIConsole
             var data = this.GetLogAsync(trackNo, suplId, sql);
             this.SaveFile(data.Result, logPath + "Booking", _type);
 
+        }
 
-            string bokSql = @"Select * from tblapilog x where x.SupplierID=@SupplierId and x.logTypeID = 7 and x.TrackNumber=@TrackNumber";
-            var bokData = this.GetLogAsync(trackNo, suplId, bokSql);
-            this.SaveFile(bokData.Result, "BookingDetail");
+        public void SupplierResponse(string trackNo, int suplId, string logpath, string _type)
+        {
+            string sqlQuery = @"Select * from tblapilog_search x where x.SupplierID=@SupplierId and x.TrackNumber=@TrackNumber";
+            var resultData = this.GetLogAsync(trackNo, suplId, sqlQuery).Result;
+            string filePath = Path.Combine(logpath, string.Format("Response-{0}.{1}", DateTime.Now.Ticks, _type));
 
+            int countHotel = 0;
+            JArray hotelList = new JArray();
+            foreach (var item in resultData)
+            {
+                if (!string.IsNullOrEmpty(item.Response))
+                {
+                    var rspString = item.Response.GetJsonFromXml();
+
+                    if (!string.IsNullOrEmpty(rspString))
+                    {
+                        dynamic data = JsonConvert.DeserializeObject(rspString);
+                        if (data.Status.Code == 200 && data.Status.Description == "Successful")
+                        {
+                            var hotels = (JArray)data.HotelResult;
+                            hotelList.Merge(hotels);
+                            Console.WriteLine("Chunk Hotel Count = {0}", hotels.Count);
+                            countHotel += hotels.Count;
+
+                        }
+                    }
+
+
+                }
+            }
+            Console.WriteLine("Total Chunk Hotel Count = {0}", countHotel);
+            File.WriteAllText(filePath, hotelList.ToString());
         }
 
 
@@ -186,37 +205,69 @@ namespace APIConsole
 
 
 
+        public void duplicateResponse(string trackNo, int suplId, string logpath, string _type)
+        {
+            string sqlQuery = @"Select * from tblapilog_search x where x.SupplierID=@SupplierId and x.TrackNumber=@TrackNumber";
+            var resultData = this.GetLogAsync(trackNo, suplId, sqlQuery).Result;
+            string filePath = Path.Combine(logpath, string.Format("Response-{0}.{1}", DateTime.Now.Ticks, _type));
+
+            int countHotel = 0;
+            JArray hotelList = new JArray();
+            foreach (var item in resultData)
+            {
+                if (!string.IsNullOrEmpty(item.Response))
+                {
+                    var rspString = item.Response.GetJsonFromXml();
+
+                    if (!string.IsNullOrEmpty(rspString))
+                    {
+                        dynamic data = JsonConvert.DeserializeObject(rspString);
+                        if (data.Status.Code == 200 && data.Status.Description == "Successful")
+                        {
+                            var hotels = (JArray)data.HotelResult;
+                            hotelList.Merge(hotels);
+                            Console.WriteLine("Chunk Hotel Count = {0}", hotels.Count);
+                            countHotel += hotels.Count;
+
+                        }
+                    }
 
 
+                }
+            }
 
+            
+            Console.WriteLine("Total Chunk Hotel Distinct = {0}", hotelList.Distinct().Count());
+            Console.WriteLine("Total Chunk Hotel Count = {0}", countHotel);
+            File.WriteAllText(filePath, hotelList.ToString());
+        }
+        public void RhineResponse(string trackNo, int suplId, string logpath, string _type)
+        {
+            string sqlQuery = @"select top  1  *  from  tblapilog_search x where x.SupplierID=0 and x.logTypeID=1 and x.TrackNumber=@TrackNumber order by 1 desc";
+            var resultData = this.GetLogAsync(trackNo, suplId, sqlQuery).Result;
+            string filePath = Path.Combine(logpath, string.Format("Response-{0}.{1}", DateTime.Now.Ticks, _type));
+            if(resultData.Count>0)
+            {
 
+           
+            int countHotel = 0;
+            var item = resultData[0];
+            if (!string.IsNullOrEmpty(item.Response))
+            {
+                var xmlData = XElement.Parse(item.Response);
 
+                var counttt = xmlData.Descendants("GiataHotelList").Where(x => x.Attribute("GSupID").Value == suplId.ToString());
+                var hotels = xmlData.Descendants("Hotel").Where(x => x.Element("SupplierID").Value == suplId.ToString());
+                countHotel = counttt.Count();
+                XElement element = new XElement("Hotels");
+                element.Add(hotels);
+                element.Save(filePath);
+                Console.WriteLine("Total Hotel Giata Count = {0}", hotels.Count());
+            }
 
-
-
+            Console.WriteLine("Total Hotel Giata Count = {0}", countHotel);
+            }
+        }
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
