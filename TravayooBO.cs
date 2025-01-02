@@ -122,7 +122,7 @@ namespace APIConsole
                 }
                 if (!string.IsNullOrEmpty(item.Response))
                 {
-                    var rspString = item.Response.GetJsonFromXml();
+                    var rspString = item.Response;
 
 
                     string filePath = logpath + string.Format("Response-{0}.{1}", index, _type);
@@ -166,7 +166,7 @@ namespace APIConsole
 
         }
 
-        public void SupplierResponse(string trackNo, int suplId, string logpath, string _type)
+        public void SupplierSearchResponse(string trackNo, int suplId, string logpath, string _type)
         {
             string sqlQuery = @"Select * from tblapilog_search x where x.SupplierID=@SupplierId and x.TrackNumber=@TrackNumber";
             var resultData = this.GetLogAsync(trackNo, suplId, sqlQuery).Result;

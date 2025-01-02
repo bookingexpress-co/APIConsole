@@ -59,5 +59,8 @@
   <ItemGroup>
     <Folder Include="App_Data\HotelAPI\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\SupplierCredentialTransfer\transfercredentials.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

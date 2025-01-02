@@ -7,15 +7,16 @@ namespace APIConsole
     {
         static void Main(string[] args)
         {
-            string trackNo = "a1500093-08d7-488f-8b76-6786d822fae1";
+            string trackNo = "963ac701-3c88-443d-a2c7-e430cbee4c57";
             int suplId = 21;
             Console.WriteLine("start");
             Console.WriteLine(DateTime.Now.ToString());
             TravayooBO obj = new TravayooBO();
             var logPath = obj.CreateIfMissing("search");
-            // obj.duplicateResponse(trackNo, suplId, logPath, "json");
-            obj.RhineResponse(trackNo, suplId, logPath, "xml");
-            obj.APILog(trackNo, suplId, logPath, "Json");
+            //obj.APILog(trackNo, suplId, logPath, "Json");
+            obj.SupplierSearchResponse(trackNo, suplId, logPath, "json");
+            //obj.RhineResponse(trackNo, suplId, logPath, "xml");
+
             Console.WriteLine(DateTime.Now.ToString());
             Console.ReadLine();
 
