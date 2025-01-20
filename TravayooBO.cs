@@ -26,7 +26,7 @@ namespace APIConsole
 
     public class TravayooBO
     {
-        string BasePath = CommonHelper.BasePath() + @"\App_Data\HotelAPI\";
+        string BasePath = CommonHelper.BasePath() + @"\" + ConfigurationManager.AppSettings["ClientsFilePath"];
         string constr = ConfigurationManager.ConnectionStrings["INGMContext.Live"].ConnectionString;
         public string CreateIfMissing(string path)
         {
@@ -126,48 +126,38 @@ namespace APIConsole
             {
                 if (!string.IsNullOrEmpty(item.Request))
                 {
-                    string filePath = Path.Combine(logpath, string.Format("Request-{0}.{1}", index, _type));
+                    string filePath = Path.Combine(logpath, string.Format("_Req_{0}.{1}", index, _type));
                     File.WriteAllText(filePath, item.Request);
                 }
                 if (!string.IsNullOrEmpty(item.Response))
                 {
                     var rspString = item.Response.GetJsonFromXml();
-                    string filePath = Path.Combine(logpath, string.Format("Response-{0}.{1}", index, _type));
+                    string filePath = Path.Combine(logpath, string.Format("_Resp_{0}.{1}", index, _type));
                     File.WriteAllText(filePath, item.Response);
                 }
                 ++index;
             }
         }
 
-        public void Search(string trackNo, int suplId, string _type)
+        public void Search(string trackNo, string path, int suplId, string _type)
         {
-            var logPath = this.CreateIfMissing("search");
-            var folder = new DirectoryInfo(logPath);
-            foreach (FileInfo file in folder.GetFiles())
-            {
-                file.Delete();
-            }
+            var logPath = Path.Combine(path, "search_sup_" + suplId);
 
             string htlSql = @"Select * from tblapilog_search x where x.SupplierID=@SupplierId and x.TrackNumber=@TrackNumber";
             var htlData = this.GetLogAsync(trackNo, suplId, htlSql);
             this.SaveFile(htlData.Result, logPath, _type);
         }
-        public void Room(string trackNo, int suplId, string _type)
+        public void Room(string trackNo, string path, int suplId, string _type)
         {
-            var logPath = this.CreateIfMissing("room" + _type);
-            var folder = new DirectoryInfo(logPath);
-            foreach (FileInfo file in folder.GetFiles())
-            {
-                file.Delete();
-            }
+            var logPath = Path.Combine(path, "room");
             string rmSql = @"Select * from tblapilog_room x where x.SupplierID=@SupplierId and x.TrackNumber=@TrackNumber";
             var rmData = this.GetLogAsync(trackNo, suplId, rmSql);
             this.SaveFile(rmData.Result, logPath, _type);
 
         }
-        public void CxlPolicy(string trackNo, int suplId, string _type)
+        public void CxlPolicy(string trackNo, string path, int suplId, string _type)
         {
-            var logPath = this.CreateIfMissing("policy"+ _type);
+            var logPath = Path.Combine(path, "cxlPolicy");
             var folder = new DirectoryInfo(logPath);
             foreach (FileInfo file in folder.GetFiles())
             {
@@ -179,9 +169,9 @@ namespace APIConsole
 
         }
 
-        public void PreBook(string trackNo, int suplId, string _type)
+        public void PreBook(string trackNo, string path, int suplId, string _type)
         {
-            var logPath = this.CreateIfMissing("prebook" + _type);
+            var logPath = Path.Combine(path, "prebook");
             var folder = new DirectoryInfo(logPath);
             foreach (FileInfo file in folder.GetFiles())
             {
@@ -196,14 +186,9 @@ namespace APIConsole
 
         }
 
-        public void Book(string trackNo, int suplId, string _type)
+        public void Book(string trackNo, string path, int suplId, string _type)
         {
-            var logPath = this.CreateIfMissing("book");
-            var folder = new DirectoryInfo(logPath);
-            foreach (FileInfo file in folder.GetFiles())
-            {
-                file.Delete();
-            }
+            var logPath = Path.Combine(path, "book");
 
             string sql = @"Select * from tblapilog x where x.SupplierID=@SupplierId and x.logTypeID = 5 and x.TrackNumber=@TrackNumber";
             var data = this.GetLogAsync(trackNo, suplId, sql);
@@ -211,7 +196,7 @@ namespace APIConsole
         }
 
 
-        public void APILog(string trackNo, int suplId, string logPath, string _type)
+        public void APILog(string trackNo, string path, int suplId, string logPath, string _type)
         {
             var folder = new DirectoryInfo(logPath);
             foreach (FileInfo file in folder.GetFiles())

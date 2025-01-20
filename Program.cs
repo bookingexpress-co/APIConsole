@@ -11,24 +11,29 @@ namespace APIConsole
             int suplId = 21;
             Console.WriteLine("start");
             Console.WriteLine(DateTime.Now.ToString());
-            TravayooBO obj = new TravayooBO();   
+            TravayooBO obj = new TravayooBO();
 
-            //obj.Room(trackNo, suplId, "Json");
-            //obj.Room(trackNo, 0, "xml");
-   
-            obj.PreBook(trackNo, suplId, "Json");
-            obj.PreBook(trackNo, 0, "xml");
+            var path = obj.CreateIfMissing(trackNo);
 
-            //obj.Book(trackNo, suplId, "Json");
-            //obj.Book(trackNo, 0, "xml");
+            obj.Search(trackNo, path, suplId, "Json");
+            obj.Search(trackNo, path, 0, "xml");
 
-            obj.CxlPolicy(trackNo, 0, "xml");
-            
+            obj.Room(trackNo, path, suplId, "Json");
+            obj.Room(trackNo, path, 0, "xml");
+
+            obj.PreBook(trackNo, path, suplId, "Json");
+            obj.PreBook(trackNo, path, 0, "xml");
+
+            obj.Book(trackNo, path, suplId, "Json");
+            obj.Book(trackNo, path, 0, "xml");
+
+            obj.CxlPolicy(trackNo, path, suplId, "xml");
+
             Console.WriteLine(DateTime.Now.ToString());
             Console.ReadLine();
 
 
-          
+
 
         }
     }
