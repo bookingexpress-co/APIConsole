@@ -1,0 +1,68 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+  <soapenv:Header>
+    <Authentication xmlns="">
+      <AgentID>TRV</AgentID>
+      <UserName>Travillio</UserName>
+      <Password>ing@tech</Password>
+      <ServiceType>HT_001</ServiceType>
+      <ServiceVersion>v1.0</ServiceVersion>
+    </Authentication>
+  </soapenv:Header>
+  <soapenv:Body>
+    <HotelPreBookingRequest xmlns="">
+      <Response_Type>XML</Response_Type>
+      <FromDate>20/01/2025</FromDate>
+      <ToDate>25/01/2025</ToDate>
+      <CountryID>45</CountryID>
+      <CityID>60198</CityID>
+      <MinStarRating>3</MinStarRating>
+      <MaxStarRating>5</MaxStarRating>
+      <HotelID>1168833</HotelID>
+      <HotelName>Radisson Blu Hotel Amsterdam City Center</HotelName>
+      <MealPlanID></MealPlanID>
+      <RoomTypeID>1</RoomTypeID>
+      <OccupancyID></OccupancyID>
+      <CurrencyID>1</CurrencyID>
+      <CurrencyName>USD</CurrencyName>
+      <PerNightRoomRate>195.908</PerNightRoomRate>
+      <TotalRoomRate>979.54</TotalRoomRate>
+      <SupplierID>21</SupplierID>
+      <PaxNationality_CountryID>67</PaxNationality_CountryID>
+      <PaxNationality_CountryCode>EG</PaxNationality_CountryCode>
+      <PaxResidenceID>67</PaxResidenceID>
+      <PaxResidenceName>Egypt</PaxResidenceName>
+      <CustomerID>10028</CustomerID>
+      <TransID>e0094bc1-a5fd-4e79-bfc6-f57d86da7a33</TransID>
+      <SubAgentID>12926</SubAgentID>
+      <CityCode>AMS</CityCode>
+      <CityName>Amsterdam</CityName>
+      <AreaID></AreaID>
+      <AreaName></AreaName>
+      <GiataList>
+        <GiataHotelList GHtlID="1168833" GSupID="21" xmlout="TBO" custName="TBO" custID="10028" sessionKey="" sourcekey="" publishedkey="" />
+      </GiataList>
+      <Rooms>
+        <RoomPax>
+          <Adult>1</Adult>
+          <Child>0</Child>
+        </RoomPax>
+        <RoomPax>
+          <Adult>1</Adult>
+          <Child>0</Child>
+        </RoomPax>
+        <RoomTypes Index="3" TotalRate="1959.02" HtlCode="1168833">
+          <Room ID="1" SuppliersID="21" RoomSeq="1" SessionID="t6RPIzrpzGwK+UEFVSZpccY+1c+P1yvNj/AZPGbRE3TE8pL3sxf0Pz4Ogt2SnU/vVm5j6rfe3O75tEkrGknCXEK6zoc3zTojb9i+qD6OdccAc4H51AgLHlBGswTf+UIcDD+PSjKvI9QGgWokEtXIT0Rfm5r9Y0kLtfdWh1S8S/AHqcdzh6PiteYGuOz2GJXG92ceas4LH5F36xeaGoWl65LbIEK+x8bGVpfHXWPjc+hHS6KS+BoQ6quSAI1eqtB70PRSFrsAK4kJCLg5fZUWIdjdl2ckJSA2Oxm4vHquGfvxUh7g4HlqB2Wji0KA/AGdwlLFIVzM+csSptvGQf5xJualapElGIVj9Ch87WZwOS/uBxk92SR/zVecNp8rqICybgP8WVkXUw6tUkbkRYynPv3fUgoLkRjiN/sc3y/x0z6J0CPy7Yk1heZv1K510Kncyd+q55A8REvr2wiqFjaJLBBsFDlJBGPPqVF5E20NIOe1L++UW4BuCH737waG+6xKR8rIuY7arq+anWAK8r6xa8xYleC7PARVWdKOIZTyJ9qr3B9oJh9LVNwo6cOE7vJkGnoYmNRSeCxd2yA6qYiqVpOIrTGxFtTq21Iit7MIpUyx2Wrf/kM1yTdp7iJDHiueKuIklhRpxdKrQfoSoPqJnyVwWO/wYjIwyIekBMPzH9c=" RoomType="Standard Room" OccupancyID="" OccupancyName="BREAKFAST,FREE WIFI" MealPlanID="" MealPlanName="BreakFast" MealPlanCode="BB" MealPlanPrice="" PerNightRoomRate="195.908" TotalRoomRate="979.54" CancellationAmount="" isavailable="true" Adult="1" ChildAge="" sourcekey="">
+            <RequestID>1168833!TB!13!TB!b6dde68a-d25f-11ef-9eee-c6d1900ae3c5!TB!AFF!</RequestID>
+            <searchType />
+            <Supplements />
+          </Room>
+          <Room ID="2" SuppliersID="21" RoomSeq="2" SessionID="t6RPIzrpzGwK+UEFVSZpccY+1c+P1yvNj/AZPGbRE3TE8pL3sxf0Pz4Ogt2SnU/vVm5j6rfe3O75tEkrGknCXEK6zoc3zTojb9i+qD6OdccAc4H51AgLHlBGswTf+UIcDD+PSjKvI9QGgWokEtXIT0Rfm5r9Y0kLtfdWh1S8S/AHqcdzh6PiteYGuOz2GJXG92ceas4LH5F36xeaGoWl65LbIEK+x8bGVpfHXWPjc+hHS6KS+BoQ6quSAI1eqtB70PRSFrsAK4kJCLg5fZUWIdjdl2ckJSA2Oxm4vHquGfvxUh7g4HlqB2Wji0KA/AGdwlLFIVzM+csSptvGQf5xJualapElGIVj9Ch87WZwOS/uBxk92SR/zVecNp8rqICybgP8WVkXUw6tUkbkRYynPv3fUgoLkRjiN/sc3y/x0z6J0CPy7Yk1heZv1K510Kncyd+q55A8REvr2wiqFjaJLBBsFDlJBGPPqVF5E20NIOe1L++UW4BuCH737waG+6xKR8rIuY7arq+anWAK8r6xa8xYleC7PARVWdKOIZTyJ9qr3B9oJh9LVNwo6cOE7vJkGnoYmNRSeCxd2yA6qYiqVpOIrTGxFtTq21Iit7MIpUyx2Wrf/kM1yTdp7iJDHiueKuIklhRpxdKrQfoSoPqJnyVwWO/wYjIwyIekBMPzH9c=" RoomType="Standard Room" OccupancyID="" OccupancyName="BREAKFAST,FREE WIFI" MealPlanID="" MealPlanName="BreakFast" MealPlanCode="BB" MealPlanPrice="" PerNightRoomRate="195.908" TotalRoomRate="979.54" CancellationAmount="" isavailable="true" Adult="1" ChildAge="" sourcekey="">
+            <RequestID>1168833!TB!13!TB!b6dde68a-d25f-11ef-9eee-c6d1900ae3c5!TB!AFF!</RequestID>
+            <searchType />
+            <Supplements />
+          </Room>
+        </RoomTypes>
+      </Rooms>
+    </HotelPreBookingRequest>
+  </soapenv:Body>
+</soapenv:Envelope>

@@ -1,4 +1,5 @@
-﻿using System.Xml;
+﻿using Newtonsoft.Json;
+using System.Xml;
 
 namespace APIConsole.Helpers
 {
@@ -15,11 +16,12 @@ namespace APIConsole.Helpers
         }
         public static string GetJsonFromXml(this string xmlString)
         {
-            //XmlDocument doc = new XmlDocument();
-            //doc.LoadXml(xmlString);
-            //xmlString = JsonConvert.DeserializeObject<string>(doc.InnerText);
+            XmlDocument doc = new XmlDocument();
+            doc.LoadXml(xmlString);
+            string resp = doc.InnerText;
+           // JsonConvert.DeserializeObject<string>(doc.InnerText);
 
-            return xmlString;
+            return resp;
         }
 
     }

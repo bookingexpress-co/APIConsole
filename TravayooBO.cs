@@ -28,6 +28,14 @@ namespace APIConsole
     {
         string BasePath = CommonHelper.BasePath() + @"\App_Data\HotelAPI\";
         string constr = ConfigurationManager.ConnectionStrings["INGMContext.Live"].ConnectionString;
+        public string CreateIfMissing(string path)
+        {
+            string logPath = BasePath + path;
+            bool folderExists = Directory.Exists(logPath);
+            if (!folderExists)
+                Directory.CreateDirectory(logPath);
+            return logPath;
+        }
 
         public async Task<List<APILogModel>> GetSearchLogAsync(string trackNo, int supplier)
         {
@@ -112,33 +120,96 @@ namespace APIConsole
         }
         public void SaveFile(List<APILogModel> lstLog, string logpath, string _type)
         {
+
             int index = 0;
             foreach (var item in lstLog)
             {
                 if (!string.IsNullOrEmpty(item.Request))
                 {
-                    string filePath = logpath + string.Format("Request-{0}.{1}", index, _type);
+                    string filePath = Path.Combine(logpath, string.Format("Request-{0}.{1}", index, _type));
                     File.WriteAllText(filePath, item.Request);
                 }
                 if (!string.IsNullOrEmpty(item.Response))
                 {
-                    var rspString = item.Response;
-
-
-                    string filePath = logpath + string.Format("Response-{0}.{1}", index, _type);
+                    var rspString = item.Response.GetJsonFromXml();
+                    string filePath = Path.Combine(logpath, string.Format("Response-{0}.{1}", index, _type));
                     File.WriteAllText(filePath, item.Response);
                 }
                 ++index;
             }
         }
-        public string CreateIfMissing(string path)
+
+        public void Search(string trackNo, int suplId, string _type)
         {
-            string logPath = BasePath + path;
-            bool folderExists = Directory.Exists(logPath);
-            if (!folderExists)
-                Directory.CreateDirectory(logPath);
-            return logPath;
+            var logPath = this.CreateIfMissing("search");
+            var folder = new DirectoryInfo(logPath);
+            foreach (FileInfo file in folder.GetFiles())
+            {
+                file.Delete();
+            }
+
+            string htlSql = @"Select * from tblapilog_search x where x.SupplierID=@SupplierId and x.TrackNumber=@TrackNumber";
+            var htlData = this.GetLogAsync(trackNo, suplId, htlSql);
+            this.SaveFile(htlData.Result, logPath, _type);
         }
+        public void Room(string trackNo, int suplId, string _type)
+        {
+            var logPath = this.CreateIfMissing("room" + _type);
+            var folder = new DirectoryInfo(logPath);
+            foreach (FileInfo file in folder.GetFiles())
+            {
+                file.Delete();
+            }
+            string rmSql = @"Select * from tblapilog_room x where x.SupplierID=@SupplierId and x.TrackNumber=@TrackNumber";
+            var rmData = this.GetLogAsync(trackNo, suplId, rmSql);
+            this.SaveFile(rmData.Result, logPath, _type);
+
+        }
+        public void CxlPolicy(string trackNo, int suplId, string _type)
+        {
+            var logPath = this.CreateIfMissing("policy"+ _type);
+            var folder = new DirectoryInfo(logPath);
+            foreach (FileInfo file in folder.GetFiles())
+            {
+                file.Delete();
+            }
+            string prSql = @"Select * from tblapilog x where x.SupplierID=@SupplierId and x.logTypeID = 3 and x.TrackNumber=@TrackNumber";
+            var prData = this.GetLogAsync(trackNo, suplId, prSql);
+            this.SaveFile(prData.Result, logPath, _type);
+
+        }
+
+        public void PreBook(string trackNo, int suplId, string _type)
+        {
+            var logPath = this.CreateIfMissing("prebook" + _type);
+            var folder = new DirectoryInfo(logPath);
+            foreach (FileInfo file in folder.GetFiles())
+            {
+                file.Delete();
+            }
+
+
+            string prSql = @"Select * from tblapilog x where x.SupplierID=@SupplierId and x.logTypeID = 4 and x.TrackNumber=@TrackNumber";
+            var prData = this.GetLogAsync(trackNo, suplId, prSql);
+            this.SaveFile(prData.Result, logPath, _type);
+
+
+        }
+
+        public void Book(string trackNo, int suplId, string _type)
+        {
+            var logPath = this.CreateIfMissing("book");
+            var folder = new DirectoryInfo(logPath);
+            foreach (FileInfo file in folder.GetFiles())
+            {
+                file.Delete();
+            }
+
+            string sql = @"Select * from tblapilog x where x.SupplierID=@SupplierId and x.logTypeID = 5 and x.TrackNumber=@TrackNumber";
+            var data = this.GetLogAsync(trackNo, suplId, sql);
+            this.SaveFile(data.Result, logPath, _type);
+        }
+
 
         public void APILog(string trackNo, int suplId, string logPath, string _type)
         {
@@ -236,7 +307,7 @@ namespace APIConsole
                 }
             }
 
-            
+
             Console.WriteLine("Total Chunk Hotel Distinct = {0}", hotelList.Distinct().Count());
             Console.WriteLine("Total Chunk Hotel Count = {0}", countHotel);
             File.WriteAllText(filePath, hotelList.ToString());
@@ -246,26 +317,26 @@ namespace APIConsole
             string sqlQuery = @"select top  1  *  from  tblapilog_search x where x.SupplierID=0 and x.logTypeID=1 and x.TrackNumber=@TrackNumber order by 1 desc";
             var resultData = this.GetLogAsync(trackNo, suplId, sqlQuery).Result;
             string filePath = Path.Combine(logpath, string.Format("Response-{0}.{1}", DateTime.Now.Ticks, _type));
-            if(resultData.Count>0)
+            if (resultData.Count > 0)
             {
 
-           
-            int countHotel = 0;
-            var item = resultData[0];
-            if (!string.IsNullOrEmpty(item.Response))
-            {
-                var xmlData = XElement.Parse(item.Response);
 
-                var counttt = xmlData.Descendants("GiataHotelList").Where(x => x.Attribute("GSupID").Value == suplId.ToString());
-                var hotels = xmlData.Descendants("Hotel").Where(x => x.Element("SupplierID").Value == suplId.ToString());
-                countHotel = counttt.Count();
-                XElement element = new XElement("Hotels");
-                element.Add(hotels);
-                element.Save(filePath);
-                Console.WriteLine("Total Hotel Giata Count = {0}", hotels.Count());
-            }
+                int countHotel = 0;
+                var item = resultData[0];
+                if (!string.IsNullOrEmpty(item.Response))
+                {
+                    var xmlData = XElement.Parse(item.Response);
 
-            Console.WriteLine("Total Hotel Giata Count = {0}", countHotel);
+                    var counttt = xmlData.Descendants("GiataHotelList").Where(x => x.Attribute("GSupID").Value == suplId.ToString());
+                    var hotels = xmlData.Descendants("Hotel").Where(x => x.Element("SupplierID").Value == suplId.ToString());
+                    countHotel = counttt.Count();
+                    XElement element = new XElement("Hotels");
+                    element.Add(hotels);
+                    element.Save(filePath);
+                    Console.WriteLine("Total Hotel Giata Count = {0}", hotels.Count());
+                }
+
+                Console.WriteLine("Total Hotel Giata Count = {0}", countHotel);
             }
         }
 
