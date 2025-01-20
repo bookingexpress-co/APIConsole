@@ -452,10 +452,7 @@ namespace APIConsole.Helpers
                         new XAttribute("amount", y.Max(p => Convert.ToDecimal(p.Attribute("amount").Value))),
                         new XAttribute("noShow", y.Key.Value))).OrderBy(p => p.Attribute("lastDate").Value.GetDateTime("d MMM, yy").Date).ToList();
 
-
-
                 var fItem = cxlList.FirstOrDefault();
-
                 if (Convert.ToDecimal(fItem.Attribute("amount").Value) != 0.0m)
                 {
                     cxlList.Insert(0, new XElement("cancellationPolicy", new XAttribute("lastDate", fItem.Attribute("lastDate").Value.GetDateTime("d MMM, yy").AddDays(-1).Date.ToString("d MMM, yy")), new XAttribute("amount", "0.00"), new XAttribute("noShow", "0")));
@@ -464,25 +461,6 @@ namespace APIConsole.Helpers
             XElement cxlItem = new XElement("cancellationPolicyList", cxlList);
             return cxlItem;
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 
 

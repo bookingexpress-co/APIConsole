@@ -13,7 +13,6 @@ using System.Xml.Linq;
 
 namespace APIConsole
 {
-
     public class APILogModel
     {
         public int Supplier { get; set; }
@@ -128,10 +127,14 @@ namespace APIConsole
                 {
                     string filePath = Path.Combine(logpath, string.Format("_Req_{0}.{1}", index, _type));
                     File.WriteAllText(filePath, item.Request);
+
                 }
                 if (!string.IsNullOrEmpty(item.Response))
                 {
-                    var rspString = item.Response.GetJsonFromXml();
+                    if (item.Supplier == 21)
+                    {
+                        item.Response = item.Response.GetJsonFromXml().cleanFormJSON();
+                    }
                     string filePath = Path.Combine(logpath, string.Format("_Resp_{0}.{1}", index, _type));
                     File.WriteAllText(filePath, item.Response);
                 }
