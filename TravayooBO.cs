@@ -27,6 +27,14 @@ namespace APIConsole
     {
         string BasePath = CommonHelper.BasePath() + @"\" + ConfigurationManager.AppSettings["ClientsFilePath"];
         string constr = ConfigurationManager.ConnectionStrings["INGMContext"].ConnectionString;
+        public TravayooBO(string connectionString, string basePath)
+        {
+            constr = connectionString;
+            BasePath = basePath;
+        }
+
+        
+
         public string CreateIfMissing(string path)
         {
             string logPath = BasePath + path;

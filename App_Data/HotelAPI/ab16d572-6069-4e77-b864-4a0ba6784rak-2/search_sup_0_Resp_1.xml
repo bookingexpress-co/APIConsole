@@ -1,0 +1,68 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+  <soapenv:Header xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <Authentication>
+      <AgentID>TRV</AgentID>
+      <UserName>Travillio</UserName>
+      <Password>ing@tech</Password>
+      <ServiceType>HT_001</ServiceType>
+      <ServiceVersion>v1.0</ServiceVersion>
+    </Authentication>
+  </soapenv:Header>
+  <soapenv:Body>
+    <searchRequest>
+      <Response_Type>XML</Response_Type>
+      <FromDate>20/07/2025</FromDate>
+      <ToDate>23/07/2025</ToDate>
+      <Nights>3</Nights>
+      <CountryID>1</CountryID>
+      <CountryCode>AE</CountryCode>
+      <CountryName>United Arab Emirates</CountryName>
+      <CityID>1312</CityID>
+      <CityCode>DXB</CityCode>
+      <CityName>DUBAI</CityName>
+      <AreaID>0</AreaID>
+      <AreaName />
+      <MinStarRating>3</MinStarRating>
+      <MaxStarRating>5</MaxStarRating>
+      <HotelID />
+      <HotelName />
+      <PaxNationality_CountryID>56</PaxNationality_CountryID>
+      <PaxNationality_CountryCode>JO</PaxNationality_CountryCode>
+      <PaxResidenceID>56</PaxResidenceID>
+      <PaxResidenceName>Jordan</PaxResidenceName>
+      <CurrencyID>1</CurrencyID>
+      <DesiredCurrencyCode>USD</DesiredCurrencyCode>
+      <CustomerID>10017</CustomerID>
+      <TransID>ab16d572-6069-4e77-b864-4a0ba6784rak-2</TransID>
+      <StaffUser>0</StaffUser>
+      <WhiteLabelCustID>0</WhiteLabelCustID>
+      <Giata>TRUE</Giata>
+      <DeployementType>TRUE</DeployementType>
+      <OnRequest>true</OnRequest>
+      <Rooms>
+        <RoomPax>
+          <Adult>1</Adult>
+          <Child>0</Child>
+        </RoomPax>
+        <RoomPax>
+          <Adult>1</Adult>
+          <Child>0</Child>
+        </RoomPax>
+      </Rooms>
+      <MealPlanList>
+        <MealType />
+      </MealPlanList>
+      <PropertyType />
+      <SuppliersList>
+        <SupplierID xmlout="false" custID="10017" custName="">28</SupplierID>
+      </SuppliersList>
+      <SubAgentID>62232</SubAgentID>
+      <AgencyName>TBO company</AgencyName>
+      <AgentUserID>0</AgentUserID>
+      <NationalityName>Jordan</NationalityName>
+    </searchRequest>
+    <searchResponse>
+      <ErrorTxt>Supplier doesn't Exists.</ErrorTxt>
+    </searchResponse>
+  </soapenv:Body>
+</soapenv:Envelope>
