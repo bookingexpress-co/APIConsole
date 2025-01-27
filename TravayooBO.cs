@@ -26,7 +26,7 @@ namespace APIConsole
     public class TravayooBO
     {
         string BasePath = CommonHelper.BasePath() + @"\" + ConfigurationManager.AppSettings["ClientsFilePath"];
-        string constr = ConfigurationManager.ConnectionStrings["INGMContext.Live"].ConnectionString;
+        string constr = ConfigurationManager.ConnectionStrings["INGMContext"].ConnectionString;
         public string CreateIfMissing(string path)
         {
             string logPath = BasePath + path;
@@ -35,6 +35,17 @@ namespace APIConsole
                 Directory.CreateDirectory(logPath);
             return logPath;
         }
+
+        public void CleanDirectory(string path)
+        {
+            var folder = new DirectoryInfo(path);
+            foreach (FileInfo file in folder.GetFiles())
+            {
+                file.Delete();
+            }
+
+        }
+
 
         public async Task<List<APILogModel>> GetSearchLogAsync(string trackNo, int supplier)
         {
@@ -125,17 +136,17 @@ namespace APIConsole
             {
                 if (!string.IsNullOrEmpty(item.Request))
                 {
-                    string filePath = Path.Combine(logpath, string.Format("_Req_{0}.{1}", index, _type));
+                    string filePath = string.Format("{0}_Req_{1}.{2}", logpath, index, _type);
                     File.WriteAllText(filePath, item.Request);
 
                 }
                 if (!string.IsNullOrEmpty(item.Response))
                 {
+                    string filePath = string.Format("{0}_Resp_{1}.{2}", logpath, index, _type);
                     if (item.Supplier == 21)
                     {
                         item.Response = item.Response.GetJsonFromXml().cleanFormJSON();
-                    }
-                    string filePath = Path.Combine(logpath, string.Format("_Resp_{0}.{1}", index, _type));
+                    }              
                     File.WriteAllText(filePath, item.Response);
                 }
                 ++index;
@@ -199,30 +210,29 @@ namespace APIConsole
         }
 
 
-        public void APILog(string trackNo, string path, int suplId, string logPath, string _type)
+        public void APILog(string trackNo, string logPath, int suplId, string _type)
         {
-            var folder = new DirectoryInfo(logPath);
-            foreach (FileInfo file in folder.GetFiles())
-            {
-                file.Delete();
-            }
+            string path = string.Empty;
 
-            string htlSql = @"Select * from tblapilog_search x where x.SupplierID=@SupplierId and x.TrackNumber=@TrackNumber";
-            var htlData = this.GetLogAsync(trackNo, suplId, htlSql);
-            this.SaveFile(htlData.Result, logPath + "HotelSearch", _type);
+            string htlSql = @"Select * from tblapilog_search x where x.logTypeID = 1 and x.SupplierID=@SupplierId and x.TrackNumber=@TrackNumber";
+            var htlData = this.GetLogAsync(trackNo, suplId, htlSql);            
+             path = Path.Combine(logPath, "search_sup_" + suplId);
+            this.SaveFile(htlData.Result, path, _type);
 
             string rmSql = @"Select * from tblapilog_room x where x.SupplierID=@SupplierId and x.TrackNumber=@TrackNumber";
             var rmData = this.GetLogAsync(trackNo, suplId, rmSql);
-            this.SaveFile(rmData.Result, logPath + "RoomSearch", _type);
+             path = Path.Combine(logPath, "room_sup_" + suplId);
+            this.SaveFile(rmData.Result, path, _type);
 
             string prSql = @"Select * from tblapilog x where x.SupplierID=@SupplierId and x.logTypeID = 4 and x.TrackNumber=@TrackNumber";
             var prData = this.GetLogAsync(trackNo, suplId, prSql);
-            this.SaveFile(prData.Result, logPath + "PreBook", _type);
+             path = Path.Combine(logPath, "preBook_sup_" + suplId);
+            this.SaveFile(prData.Result, path, _type);
 
             string sql = @"Select * from tblapilog x where x.SupplierID=@SupplierId and x.logTypeID = 5 and x.TrackNumber=@TrackNumber";
             var data = this.GetLogAsync(trackNo, suplId, sql);
-            this.SaveFile(data.Result, logPath + "Booking", _type);
-
+            path = Path.Combine(logPath, "book_sup_" + suplId);
+            this.SaveFile(data.Result, path, _type);
         }
 
         public void SupplierSearchResponse(string trackNo, int suplId, string logpath, string _type)
