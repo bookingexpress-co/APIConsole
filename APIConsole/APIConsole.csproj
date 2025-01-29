@@ -64,5 +64,11 @@
     <Content Include="App_Data\Credentials\HotelCredentials.xml" />
     <Content Include="App_Data\Credentials\transfercredentials.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\APIConsole.Supplier\APIConsole.Supplier.csproj">
+      <Project>{2f840d8e-1b8b-4fbe-af0c-553d1f545a3f}</Project>
+      <Name>APIConsole.Supplier</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

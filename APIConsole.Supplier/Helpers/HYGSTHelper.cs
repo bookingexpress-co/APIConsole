@@ -52,6 +52,14 @@ namespace APIConsole.Supplier.Helpers
                     {
                         _credential.BaseUrl = data.Element("book").Value;
                     }
+                    else if (callType == (short)ApiAction.BookDetail)
+                    {
+                        _credential.BaseUrl = data.Element("book").Value;
+                    }
+                    else if (callType == (short)ApiAction.Hotels)
+                    {
+                        _credential.BaseUrl = data.Element("static").Value;
+                    }
                 }
                 return _credential;
             }

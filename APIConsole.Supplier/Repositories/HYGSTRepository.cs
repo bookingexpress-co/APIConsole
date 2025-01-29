@@ -218,12 +218,12 @@ namespace APIConsole.Supplier.Repositories
                 {
                     proxyURL += reqModel.RequestStr;
                 }
-
+                ServicePointManager.SecurityProtocol = (SecurityProtocolType)(0xc0 | 0x300 | 0xc00);
                 var client = new RestClient(proxyURL);
-                client.Timeout = -1;
                 var request = new RestRequest(Method.GET);
                 request.AddHeader("Authorization", "Bearer " + model.Token);
                 request.AddHeader("Accept-Encoding", "gzip, deflate");
+                request.AddHeader("KeepAlive", "true");
                 IRestResponse response = client.Execute(request);
                 responseBody = response.Content;
             }

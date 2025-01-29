@@ -1296,7 +1296,7 @@ namespace APIConsole.Supplier.Services
 
 
 
-        public void GetAllHotels(XElement BookingReq)
+        public void GetAllHotels()
         {
 
             var reqObj = new RequestModel();
@@ -1306,7 +1306,9 @@ namespace APIConsole.Supplier.Services
             //reqObj.TrackNo = req.TrackNo;
             reqObj.CallType = ApiAction.Hotels;
             reqObj.Method = "GET";
-            reqObj.ResponseStr = repo.GetClientResponse(reqObj);
+            reqObj.RequestStr = "hotels.json";
+            
+            reqObj.ResponseStr = repo.GetStaticResponse(reqObj);
 
             if (!string.IsNullOrEmpty(reqObj.ResponseStr))
             {

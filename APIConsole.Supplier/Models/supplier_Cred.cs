@@ -1,6 +1,8 @@
-﻿using System;
+﻿using APIConsole.Supplier.Helpers;
+using System;
 using System.Configuration;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Xml.Linq;
 
@@ -13,7 +15,10 @@ namespace APIConsole.Supplier.Models
         {
             try
             {
-                supcred = XElement.Load(HttpContext.Current.Server.MapPath(@"~/App_Data/SupplierCredential/suppliercredentials.xml"));
+       
+                string BasePath = TravayooHelper.BasePath() + @"\" + ConfigurationManager.AppSettings["Credentials"];
+
+                supcred = XElement.Load(BasePath);
             }
             catch { }
         }

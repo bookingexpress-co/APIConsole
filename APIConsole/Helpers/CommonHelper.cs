@@ -236,32 +236,7 @@ namespace APIConsole.Helpers
             return dte;
         }
 
-        public static ApiAction GetAction(this string ElementName)
-        {
-            if (ElementName == "SearchRequest")
-            {
-                return ApiAction.Search;
-            }
-            else if (ElementName == "PrebookRequest")
-            {
-                return ApiAction.PreBook;
-
-            }
-            else if (ElementName == "bookRequest")
-            {
-                return ApiAction.Book;
-            }
-            else if (ElementName == "TransferCXLPolicyRequest")
-            {
-                return ApiAction.CXLPolicy;
-            }
-            else
-            {
-                return ApiAction.Cancel;
-            }
-
-        }
-
+   
         public static string IsNullString(this string str)
         {
             string result = string.Empty;
@@ -467,30 +442,9 @@ namespace APIConsole.Helpers
 
     /// </summary>  
     #region Enums
-    public enum ApiAction
-    {
-        //[Description("Searching")]
-        Search = 1,
-        //[Description("Cancellation Policy")]
-        CXLPolicy = 3,
-        //[Description("PreBooking")]
-        PreBook = 4,
-        //[Description("Booking")]
-        Book = 5,
-        //[Description("Cancellation")]
-        Cancel = 6,
-
-    }
-
-    public enum PickUpType
-    {
-        //[Description("Airport Terminal")]
-        Terminal = 1,
-        //[Description("Accomodation")]
-        Hotel = 2,
 
 
-    }
+
 
     #endregion
 
