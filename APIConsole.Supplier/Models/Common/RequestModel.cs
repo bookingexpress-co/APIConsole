@@ -6,8 +6,16 @@ namespace APIConsole.Supplier.Models.Common
     {
         public RequestModel()
         {
-          this.TimeOut = 1200000;
+            this.TimeOut = 1200000;
         }
+
+
+        public bool IsResult
+        {
+            get;
+            set;
+        }
+
         public string HostName
         {
             get;
@@ -49,7 +57,7 @@ namespace APIConsole.Supplier.Models.Common
             get;
             set;
         }
-    
+
 
         public string Header
         {
@@ -57,7 +65,7 @@ namespace APIConsole.Supplier.Models.Common
             set;
         }
 
-        public long  CustomerId
+        public long CustomerId
         {
             get;
             set;
@@ -91,8 +99,12 @@ namespace APIConsole.Supplier.Models.Common
             get;
             set;
         }
+        public string IpAddress
+        {
+            get;
+            set;
+        }
 
-    
 
 
     }

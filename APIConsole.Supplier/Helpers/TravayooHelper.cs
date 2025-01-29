@@ -1,4 +1,5 @@
-﻿using System;
+﻿using APIConsole.Supplier.Models;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -7,6 +8,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Web;
 using System.Xml;
 using System.Xml.Linq;
 

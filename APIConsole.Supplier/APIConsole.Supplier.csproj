@@ -34,6 +34,9 @@
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\APIConsole\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="RestSharp, Version=100.0.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharpSigned.105.2.3\lib\net45\RestSharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -46,11 +49,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccess\SaveAPILog.cs" />
     <Compile Include="DataAccess\SQLContext.cs" />
     <Compile Include="DataAccess\TravayooConnection.cs" />
     <Compile Include="DataAccess\TravayooDataAcess.cs" />
     <Compile Include="DataAccess\TravayooLogs.cs" />
     <Compile Include="DataAccess\APILog.cs" />
+    <Compile Include="Helpers\HYGSTHelper.cs" />
     <Compile Include="Helpers\TravayooHelper.cs" />
     <Compile Include="Models\Common\APILogDetail.cs" />
     <Compile Include="Models\Common\AuthenticationModel.cs" />
@@ -67,7 +72,10 @@
     <Compile Include="Models\HYGST\HYGSTCredentials.cs" />
     <Compile Include="Models\HYGST\HyGSTPrebookReqModel.cs" />
     <Compile Include="Models\HYGST\RoomPrice.cs" />
+    <Compile Include="Models\supplier_Cred.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\CommonRepository.cs" />
+    <Compile Include="Repositories\CommonRepositoryTest.cs" />
     <Compile Include="Repositories\HYGSTRepository.cs" />
     <Compile Include="Repositories\TravayooRepository.cs" />
     <Compile Include="Services\HYGSTServices.cs" />

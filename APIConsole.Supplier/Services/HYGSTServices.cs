@@ -4,6 +4,7 @@ using APIConsole.Supplier.Models;
 using APIConsole.Supplier.Models.Common;
 using APIConsole.Supplier.Models.HYGST;
 using APIConsole.Supplier.Repositories;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -23,7 +24,7 @@ namespace APIConsole.Supplier.Services
         #region Global vars
         HYGSTCredentials model;
         HYGSTRepository repo;
-        APILog _saveEx;
+        SaveAPILog _saveEx;
         CustomException exLog;
         string customerId = string.Empty;
         string trackNo = string.Empty;

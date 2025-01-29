@@ -1,5 +1,8 @@
-﻿using APIConsole.Supplier.Models.Common;
+﻿using APIConsole.Supplier.DataAccess;
+using APIConsole.Supplier.Models;
+using APIConsole.Supplier.Models.Common;
 using APIConsole.Supplier.Models.HYGST;
+using RestSharp;
 using System;
 using System.IO;
 using System.Net;
