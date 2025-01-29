@@ -5,27 +5,7 @@ VisualStudioVersion = 16.0.35130.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIConsole", "APIConsole.csproj", "{F5137E5C-3C75-4562-A7E3-EDE52FDCAC79}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "RhineLog.Web", "..\RhineLog.Web\", "{AC4A6BC8-63C9-43DB-94B6-F5FDDF1239F7}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_58276"
-		Debug.AspNetCompiler.PhysicalPath = "..\RhineLog.Web\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58276\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_58276"
-		Release.AspNetCompiler.PhysicalPath = "..\RhineLog.Web\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58276\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "58276"
-		SlnRelativePath = "..\RhineLog.Web\"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIConsole.Supplier", "..\APIConsole.Supplier\APIConsole.Supplier.csproj", "{2F840D8E-1B8B-4FBE-AF0C-553D1F545A3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,10 +17,10 @@ Global
 		{F5137E5C-3C75-4562-A7E3-EDE52FDCAC79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5137E5C-3C75-4562-A7E3-EDE52FDCAC79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5137E5C-3C75-4562-A7E3-EDE52FDCAC79}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AC4A6BC8-63C9-43DB-94B6-F5FDDF1239F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AC4A6BC8-63C9-43DB-94B6-F5FDDF1239F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AC4A6BC8-63C9-43DB-94B6-F5FDDF1239F7}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{AC4A6BC8-63C9-43DB-94B6-F5FDDF1239F7}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{2F840D8E-1B8B-4FBE-AF0C-553D1F545A3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F840D8E-1B8B-4FBE-AF0C-553D1F545A3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F840D8E-1B8B-4FBE-AF0C-553D1F545A3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F840D8E-1B8B-4FBE-AF0C-553D1F545A3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

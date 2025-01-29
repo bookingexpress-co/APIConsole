@@ -20,7 +20,6 @@ namespace APIConsole.Helpers
             doc.LoadXml(xmlString);
             string resp = doc.InnerText;
            // JsonConvert.DeserializeObject<string>(doc.InnerText);
-
             return resp;
         }
 

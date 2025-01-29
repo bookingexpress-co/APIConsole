@@ -1,5 +1,7 @@
 ﻿
+using APIConsole.Models;
 using System;
+using System.Configuration;
 
 namespace APIConsole
 {
@@ -32,7 +34,7 @@ namespace APIConsole
 
         public static void supplierlog(int supplierId, string trackNo)
         {
-            TravayooBO obj = new TravayooBO();
+            TravayooBO obj = new TravayooBO(ConfigurationManager.ConnectionStrings["INGMContext"].ConnectionString,"");
             var path = obj.CreateIfMissing(trackNo);
             obj.CleanDirectory(path);
             obj.APILog(trackNo, path, supplierId, "json");
