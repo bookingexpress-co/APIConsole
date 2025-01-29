@@ -12,12 +12,12 @@ namespace APIConsole
     {
         static void Main(string[] args)
         {
-            string trackNo = "ab16d572-6069-4e77-b864-4a0ba6784rak-2";
-            int suplId = 28;
+            string trackNo = "720a3576-2785-4acf-a975-99dc6492e996";
+            int suplId = 24;
             Console.WriteLine("start");
             Console.WriteLine(DateTime.Now.ToString());
-            //Program.supplierlog(suplId, trackNo);
-            Program.HyperGuestData(28);
+            Program.supplierlog(suplId, trackNo);
+            //Program.HyperGuestData(28);
             //TravayooBO obj = new TravayooBO();
             //var path = obj.CreateIfMissing(trackNo);
             //obj.Search(trackNo, path, suplId, "Json");

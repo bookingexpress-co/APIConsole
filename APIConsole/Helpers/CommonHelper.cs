@@ -28,7 +28,7 @@ namespace APIConsole.Helpers
         static CommonHelper()
         {
 
-            string filePath =  "App_Data/SupplierCredentialTransfer/transfercredentials.xml";
+            string filePath = "App_Data/Credentials/transfercredentials.xml";
             var _path = Path.Combine(BasePath(), filePath);
             _credentialList = XElement.Load(_path);
         }
