@@ -1,7 +1,7 @@
 USE [StaticData]
 GO
 
-/****** Object:  Table [dbo].[tblHYGSTHotel]    Script Date: 30-01-2025 14:17:58 ******/
+/****** Object:  Table [dbo].[tblHYGSTHotel]    Script Date: 30-01-2025 17:42:58 ******/
 SET ANSI_NULLS ON
 GO
 
@@ -17,17 +17,18 @@ CREATE TABLE [dbo].[tblHYGSTHotel](
 	[region] [nvarchar](50) NULL,
 	[phone] [nvarchar](50) NULL,
 	[email] [nvarchar](50) NULL,
-	[website] [nvarchar](50) NULL,
+	[website] [nvarchar](250) NULL,
 	[checkIn] [nvarchar](20) NULL,
 	[checkOut] [nvarchar](20) NULL,
 	[longitude] [nvarchar](20) NULL,
 	[latitude] [nvarchar](20) NULL,
-	[address] [nvarchar](500) NULL,
+	[address] [nvarchar](1000) NULL,
 	[postcode] [nvarchar](20) NULL,
 	[descriptions] [nvarchar](max) NULL,
 	[images] [nvarchar](max) NULL,
 	[last_updated] [datetime] NULL,
 	[is_updated] [bit] NULL,
+	[isTest] [int] NULL,
  CONSTRAINT [PK_tblHYGSTHotel] PRIMARY KEY CLUSTERED 
 (
 	[hotel_id] ASC
