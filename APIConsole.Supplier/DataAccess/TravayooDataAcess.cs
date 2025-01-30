@@ -7,19 +7,19 @@ namespace APIConsole.Supplier.DataAccess
 {
     public class TravayooDataAcess
     {
-        private static string sqlconnectionstring;
-        static TravayooDataAcess()
+        private  string sqlconnectionstring;
+        public TravayooDataAcess(string _connection)
         {
-            sqlconnectionstring = ConfigurationManager.ConnectionStrings["INGMContext"].ToString();
+            sqlconnectionstring = _connection;
 
         }
-        private static SqlConnection OpenConnection()
+        private  SqlConnection OpenConnection()
         {
             SqlConnection objsqlconnection;
             try
             {
                 objsqlconnection = new SqlConnection();
-                objsqlconnection = GetConnection();
+                objsqlconnection =this.GetConnection();
                 objsqlconnection.Open();
                 return objsqlconnection;
             }
@@ -29,7 +29,7 @@ namespace APIConsole.Supplier.DataAccess
             }
         }
 
-        private static SqlConnection GetConnection()
+        private  SqlConnection GetConnection()
         {
             try
             {
@@ -41,7 +41,7 @@ namespace APIConsole.Supplier.DataAccess
             }
         }
 
-        private static void CloseConnection(SqlConnection con)
+        private  void CloseConnection(SqlConnection con)
         {
             try
             {
@@ -57,12 +57,12 @@ namespace APIConsole.Supplier.DataAccess
             }
         }
 
-        public static DataTable Get(string pQueryCode, params SqlParameter[] pParameterValues)
+        public  DataTable Get(string pQueryCode, params SqlParameter[] pParameterValues)
         {
             try
             {
                 DataTable vDataTable = new DataTable();
-                using (SqlConnection vSqlConnection = TravayooDataAcess.OpenConnection())
+                using (SqlConnection vSqlConnection = this.OpenConnection())
                 {
                     using (SqlCommand vSqlCommand = new SqlCommand(pQueryCode, vSqlConnection))
                     {
@@ -86,11 +86,11 @@ namespace APIConsole.Supplier.DataAccess
 
         }
 
-        public static int Insert(string pQueryCode, params SqlParameter[] pParameterValues)
+        public  int Insert(string pQueryCode, params SqlParameter[] pParameterValues)
         {
             try
             {
-                using (SqlConnection vSqlConnection = TravayooDataAcess.OpenConnection())
+                using (SqlConnection vSqlConnection = this.OpenConnection())
                 {
                     using (SqlCommand vSqlCommand = new SqlCommand(pQueryCode, vSqlConnection))
                     {

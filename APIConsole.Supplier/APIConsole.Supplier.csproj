@@ -68,6 +68,7 @@
     <Compile Include="Models\Common\StaticHotelData.cs" />
     <Compile Include="Models\Common\CustomException.cs" />
     <Compile Include="Models\GlovalVar.cs" />
+    <Compile Include="Models\HYGST\HYGSTHotelDetail.cs" />
     <Compile Include="Models\HYGST\HyGSTBookReqModel.cs" />
     <Compile Include="Models\HYGST\HYGSTCredentials.cs" />
     <Compile Include="Models\HYGST\HyGSTPrebookReqModel.cs" />

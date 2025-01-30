@@ -1,6 +1,7 @@
 ﻿using APIConsole.Supplier.DataAccess;
 using APIConsole.Supplier.Models.Common;
 using System;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.IO;
@@ -116,9 +117,9 @@ namespace APIConsole.Supplier.Repositories
             page.SqlDbType = SqlDbType.VarChar;
             page.Value = log.FileName;
             pList[4] = page;
+            var _dataAcess = new TravayooDataAcess("");
 
-
-            int result = TravayooDataAcess.Insert("APIProc", pList);
+            int result = _dataAcess.Insert("APIProc", pList);
             return result;
 
         }
@@ -166,9 +167,10 @@ namespace APIConsole.Supplier.Repositories
             SupplierId.Value = request.SupplierId;
             pList[5] = SupplierId;
 
+            string _constr = ConfigurationManager.ConnectionStrings["INGMContext"].ConnectionString;
+            var _dataAcess = new TravayooDataAcess(_constr);
 
-
-            DataTable result = TravayooDataAcess.Get("APIProc", pList);
+            DataTable result = _dataAcess.Get("APIProc", pList);
             return result;
         }
 
@@ -199,7 +201,10 @@ namespace APIConsole.Supplier.Repositories
             city.Value = Convert.ToInt64(CityId);
 
             pList[2] = city;
-            DataTable result = TravayooDataAcess.Get("dotwProc", pList);
+            var _dataAcess = new TravayooDataAcess("");
+
+    
+            DataTable result = _dataAcess.Get("dotwProc", pList);
             //code = result.Rows[0]["SupCityId"].ToString().Trim();
             if (result.Rows.Count > 0)
             {

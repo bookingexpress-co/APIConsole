@@ -540,8 +540,34 @@ namespace APIConsole.Supplier.Helpers
 
         }
 
+        public static string CreateIfMissing(string _folderName)
+        {
+            string basePath = BasePath() + "/App_Data";
+            string absolutePath = Path.Combine(basePath, _folderName);
+            bool folderExists = Directory.Exists(absolutePath);
+            if (!folderExists)
+            {
+                Directory.CreateDirectory(absolutePath);
+            }
+            else
+            {
+                var folder = new DirectoryInfo(absolutePath);
+                foreach (FileInfo file in folder.GetFiles())
+                {
+                    file.Delete();
+                }
+            }
+            return absolutePath;
+        }
 
+        public static void CleanDirectory(string _folderPath)
+        {
+            var folder = new DirectoryInfo(_folderPath);
+            foreach (FileInfo file in folder.GetFiles())
+            {
+                file.Delete();
+            }
+        }
 
-    
     }
 }

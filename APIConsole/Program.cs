@@ -13,11 +13,12 @@ namespace APIConsole
         static void Main(string[] args)
         {
             string trackNo = "720a3576-2785-4acf-a975-99dc6492e996";
-            int suplId = 24;
+            int suplId = 28;
+            string _customerId = "10017";
             Console.WriteLine("start");
             Console.WriteLine(DateTime.Now.ToString());
-            Program.supplierlog(suplId, trackNo);
-            //Program.HyperGuestData(28);
+            //Program.supplierlog(suplId, trackNo);
+            Program.HyperGuestData(_customerId, suplId);
             //TravayooBO obj = new TravayooBO();
             //var path = obj.CreateIfMissing(trackNo);
             //obj.Search(trackNo, path, suplId, "Json");
@@ -48,9 +49,9 @@ namespace APIConsole
         }
 
 
-        public static void HyperGuestData(int supplierId = 28)
+        public static void HyperGuestData(string customerId, int supplierId = 28)
         {
-            var _srv = new HYGSTServices("10017", ApiAction.Hotels);
+            var _srv = new HYGSTServices(customerId, ApiAction.Hotels);
             _srv.GetAllHotels();
         }
 

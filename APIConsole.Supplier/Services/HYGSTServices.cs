@@ -9,6 +9,7 @@ using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -1296,27 +1297,29 @@ namespace APIConsole.Supplier.Services
 
 
 
-        public void GetAllHotels()
+        public int GetAllHotels()
         {
-
-            var reqObj = new RequestModel();
-            reqObj.StartTime = DateTime.Now;
-            //reqObj.StartTime = DateTime.Now;
-            //reqObj.CustomerId = req.CustomerId;
-            //reqObj.TrackNo = req.TrackNo;
-            reqObj.CallType = ApiAction.Hotels;
-            reqObj.Method = "GET";
-            reqObj.RequestStr = "hotels.json";
-            
-            reqObj.ResponseStr = repo.GetStaticResponse(reqObj);
-
-            if (!string.IsNullOrEmpty(reqObj.ResponseStr))
+            int result = 0;
+            try
             {
-                if (reqObj.ResponseStr.StartsWith("{") && reqObj.ResponseStr.EndsWith("}"))
+                var reqObj = new RequestModel();
+                reqObj.StartTime = DateTime.Now;
+                reqObj.CallType = ApiAction.Hotels;
+                reqObj.Method = "GET";
+                reqObj.RequestStr = "hotels.json";
+                reqObj.ResponseStr = repo.GetStaticResponse(reqObj);
+                if (!string.IsNullOrEmpty(reqObj.ResponseStr))
                 {
+
+                    result = repo.UploadJson(reqObj.ResponseStr);
+
                 }
             }
-
+            catch
+            {
+                result = 0;
+            }
+            return result;
         }
 
 

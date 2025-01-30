@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\HotelAPI\" />
+    <Folder Include="App_Data\supplier_28\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\Credentials\HotelCredentials.xml" />

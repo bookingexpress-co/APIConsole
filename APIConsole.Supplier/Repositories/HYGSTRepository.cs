@@ -1,9 +1,13 @@
 ﻿using APIConsole.Supplier.DataAccess;
+using APIConsole.Supplier.Helpers;
 using APIConsole.Supplier.Models;
 using APIConsole.Supplier.Models.Common;
 using APIConsole.Supplier.Models.HYGST;
 using RestSharp;
 using System;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 using System.IO;
 using System.Net;
 
@@ -16,6 +20,7 @@ namespace APIConsole.Supplier.Repositories
         SaveAPILog apilog;
         APILogDetail log;
         CustomException custEx;
+        string _filePath = @"/App_Data/";
         public HYGSTRepository(HYGSTCredentials _model)
         {
             model = _model;
@@ -226,6 +231,14 @@ namespace APIConsole.Supplier.Repositories
                 request.AddHeader("KeepAlive", "true");
                 IRestResponse response = client.Execute(request);
                 responseBody = response.Content;
+
+
+                string _path = TravayooHelper.CreateIfMissing("supplier_28");
+                string filePath = Path.Combine(_path, string.Format("HotelList.{0}", "json"));
+                File.WriteAllText(filePath, responseBody.ToString());
+
+
+
             }
             catch (Exception ex)
             {
@@ -237,7 +250,30 @@ namespace APIConsole.Supplier.Repositories
 
 
 
+        public int UploadJson(string _response)
+        {
 
+
+            SqlParameter[] pList = new SqlParameter[2];
+            var flag = new SqlParameter();
+            flag.ParameterName = "@flag";
+            flag.Direction = ParameterDirection.Input;
+            flag.SqlDbType = SqlDbType.Int;
+            flag.Value = 1;
+            pList[0] = flag;
+            var json = new SqlParameter();
+            json.ParameterName = "@jsonData";
+            json.Direction = ParameterDirection.Input;
+            json.SqlDbType = SqlDbType.NVarChar;
+            json.Value = _response;
+            pList[1] = json;
+
+            string _constr = ConfigurationManager.ConnectionStrings["INGMContext.Static"].ConnectionString;
+            var _dataAcess = new TravayooDataAcess(_constr);
+
+            int result = _dataAcess.Insert("HYGSTProc", pList);
+            return result;
+        }
 
 
 
