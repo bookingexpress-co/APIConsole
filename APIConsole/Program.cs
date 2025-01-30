@@ -52,7 +52,9 @@ namespace APIConsole
         public static void HyperGuestData(string customerId, int supplierId = 28)
         {
             var _srv = new HYGSTServices(customerId, ApiAction.Hotels);
-            _srv.GetAllHotels();
+            //_srv.GetAllHotels();
+
+            _srv.GetHotelInfo("7459");
         }
 
     }

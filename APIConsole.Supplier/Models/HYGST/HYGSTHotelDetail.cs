@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace APIConsole.Supplier.Models.HYGST
 {
-    class HYGSTHotelDetail
+   public class HYGSTHotelDetail
     {
 
         public string descriptions { get; set; }
@@ -21,6 +21,7 @@ namespace APIConsole.Supplier.Models.HYGST
         public string latitude { get; set; }
         public string checkIn { get; set; }
         public string checkOut { get; set; }
-        
+        public string hotel_id { get; set; }
+
     }
 }

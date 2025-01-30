@@ -1323,6 +1323,55 @@ namespace APIConsole.Supplier.Services
         }
 
 
+        public int GetHotelInfo(string hotelId)
+        {
+            int result = 0;
+            var model = new HYGSTHotelDetail();
+            var reqObj = new RequestModel();
+            try
+            {
+                reqObj.StartTime = DateTime.Now;
+                reqObj.CallType = ApiAction.HotelInfo;
+                reqObj.Method = "GET";
+                reqObj.RequestStr = hotelId + "/property-static.json";
+                reqObj.ResponseStr = repo.GetStaticResponse(reqObj);
+                if (!string.IsNullOrEmpty(reqObj.ResponseStr))
+                {
+                    var data = JsonConvert.DeserializeObject<dynamic>(reqObj.ResponseStr);
+
+
+
+                    model.descriptions = JsonConvert.ToString(data.descriptions);
+
+
+                    model.images = JsonConvert.ToString(data["images"]);
+                    model.name = (string)data["name"];
+                    model.phone = (string)data.SelectToken("contact.phone");
+                    model.email = (string)data.SelectToken("contact.email");
+                    model.website = (string)data.SelectToken("contact.website");
+                    model.address = (string)data.SelectToken("location.address");
+                    model.postcode = (string)data.SelectToken("location.postcode");
+                    model.longitude = (string)data.SelectToken("coordinates.longitude");
+                    model.latitude = (string)data.SelectToken("coordinates.latitude");
+                    model.checkIn = (string)data.SelectToken("settings.checkIn");
+                    model.checkIn = (string)data.SelectToken("settings.checkOut");
+
+              
+
+                    model.hotel_id = hotelId;
+                    result = repo.UploadHotelDetail(model);
+                }
+            }
+            catch(Exception ex)
+            {
+                result = 0;
+            }
+            return result;
+
+
+        }
+
+
 
         #region Dispose
         /// <summary>

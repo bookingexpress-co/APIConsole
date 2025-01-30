@@ -252,8 +252,6 @@ namespace APIConsole.Supplier.Repositories
 
         public int UploadJson(string _response)
         {
-
-
             SqlParameter[] pList = new SqlParameter[2];
             var flag = new SqlParameter();
             flag.ParameterName = "@flag";
@@ -276,7 +274,108 @@ namespace APIConsole.Supplier.Repositories
         }
 
 
+        public int UploadHotelDetail(HYGSTHotelDetail model)
+        {
 
+            SqlParameter[] pList = new SqlParameter[2];
+            var flag = new SqlParameter();
+            flag.ParameterName = "@flag";
+            flag.Direction = ParameterDirection.Input;
+            flag.SqlDbType = SqlDbType.Int;
+            flag.Value = 3;
+            pList[0] = flag;
+
+            var hotel_id = new SqlParameter();
+            hotel_id.ParameterName = "@hotel_id";
+            hotel_id.Direction = ParameterDirection.Input;
+            hotel_id.SqlDbType = SqlDbType.NVarChar;
+            hotel_id.Value = model.hotel_id;
+            pList[1] = hotel_id;
+
+            var images = new SqlParameter();
+            images.ParameterName = "@images";
+            images.Direction = ParameterDirection.Input;
+            images.SqlDbType = SqlDbType.NVarChar;
+            images.Value = model.images;
+            pList[2] = images;
+
+            var address = new SqlParameter();
+            address.ParameterName = "@address";
+            address.Direction = ParameterDirection.Input;
+            address.SqlDbType = SqlDbType.NVarChar;
+            address.Value = model.address;
+            pList[3] = address;
+
+            var postcode = new SqlParameter();
+            postcode.ParameterName = "@postcode";
+            postcode.Direction = ParameterDirection.Input;
+            postcode.SqlDbType = SqlDbType.NVarChar;
+            postcode.Value = model.images;
+            pList[4] = postcode;
+
+            var longitude = new SqlParameter();
+            longitude.ParameterName = "@longitude";
+            longitude.Direction = ParameterDirection.Input;
+            longitude.SqlDbType = SqlDbType.NVarChar;
+            longitude.Value = model.longitude;
+            pList[5] = longitude;
+
+            var latitude = new SqlParameter();
+            latitude.ParameterName = "@latitude";
+            latitude.Direction = ParameterDirection.Input;
+            latitude.SqlDbType = SqlDbType.NVarChar;
+            latitude.Value = model.latitude;
+            pList[6] = latitude;
+
+            var phone = new SqlParameter();
+            phone.ParameterName = "@phone";
+            phone.Direction = ParameterDirection.Input;
+            phone.SqlDbType = SqlDbType.NVarChar;
+            phone.Value = model.phone;
+            pList[7] = phone;
+
+            var email = new SqlParameter();
+            email.ParameterName = "@email";
+            email.Direction = ParameterDirection.Input;
+            email.SqlDbType = SqlDbType.NVarChar;
+            email.Value = model.email;
+            pList[8] = email;
+
+            var website = new SqlParameter();
+            website.ParameterName = "@website";
+            website.Direction = ParameterDirection.Input;
+            website.SqlDbType = SqlDbType.NVarChar;
+            website.Value = model.website;
+            pList[9] = website;
+
+            var descriptions = new SqlParameter();
+            descriptions.ParameterName = "@descriptions";
+            descriptions.Direction = ParameterDirection.Input;
+            descriptions.SqlDbType = SqlDbType.NVarChar;
+            descriptions.Value = model.descriptions;
+            pList[10] = descriptions;
+
+            var checkIn = new SqlParameter();
+            checkIn.ParameterName = "@checkIn";
+            checkIn.Direction = ParameterDirection.Input;
+            checkIn.SqlDbType = SqlDbType.NVarChar;
+            checkIn.Value = model.checkIn;
+            pList[11] = checkIn;
+
+
+            var checkOut = new SqlParameter();
+            checkOut.ParameterName = "@checkOut";
+            checkOut.Direction = ParameterDirection.Input;
+            checkOut.SqlDbType = SqlDbType.NVarChar;
+            checkOut.Value = model.checkOut;
+            pList[12] = checkOut;
+
+            string _constr = ConfigurationManager.ConnectionStrings["INGMContext.Static"].ConnectionString;
+            var _dataAcess = new TravayooDataAcess(_constr);
+
+            int result = _dataAcess.Insert("HYGSTProc", pList);
+            return result;
+        }
 
 
 
