@@ -38,8 +38,8 @@ namespace APIConsole.Models
 
     public class TravayooBO
     {
-        string BasePath = CommonHelper.BasePath() + @"\" + ConfigurationManager.AppSettings["ClientsFilePath"];
-        string constr = ConfigurationManager.ConnectionStrings["INGMContext"].ConnectionString;
+        string BasePath;
+        string constr;
         public TravayooBO(string connectionString, string basePath)
         {
             constr = connectionString;

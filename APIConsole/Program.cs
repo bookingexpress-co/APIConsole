@@ -37,7 +37,10 @@ namespace APIConsole
 
         public static void supplierlog(int supplierId, string trackNo)
         {
-            TravayooBO obj = new TravayooBO(ConfigurationManager.ConnectionStrings["INGMContext"].ConnectionString, "");
+
+            string _basePath = CommonHelper.BasePath() + @"\" + ConfigurationManager.AppSettings["ClientLogPath"];
+            string _constr = ConfigurationManager.ConnectionStrings["INGMContext"].ConnectionString;
+            TravayooBO obj = new TravayooBO(_constr, _basePath);
             var path = obj.CreateIfMissing(trackNo);
             obj.CleanDirectory(path);
             obj.APILog(trackNo, path, supplierId, "json");
@@ -48,7 +51,7 @@ namespace APIConsole
         public static void HyperGuestData(int supplierId = 28)
         {
             var _srv = new HYGSTServices("10017", ApiAction.Hotels);
-           _srv.GetAllHotels();
+            _srv.GetAllHotels();
         }
 
     }
