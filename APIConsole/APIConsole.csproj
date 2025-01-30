@@ -67,6 +67,8 @@
   <ItemGroup>
     <Content Include="App_Data\Credentials\HotelCredentials.xml" />
     <Content Include="App_Data\Credentials\transfercredentials.xml" />
+    <Content Include="App_Data\Sql\HYGSTProc.sql" />
+    <Content Include="App_Data\Sql\tblHYGSTHotel.sql" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\APIConsole.Supplier\APIConsole.Supplier.csproj">
