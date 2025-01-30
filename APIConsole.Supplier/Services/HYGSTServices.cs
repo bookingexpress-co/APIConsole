@@ -1341,10 +1341,10 @@ namespace APIConsole.Supplier.Services
 
 
 
-                    model.descriptions = JsonConvert.ToString(data.descriptions);
+                    model.descriptions = JsonConvert.SerializeObject(data["descriptions"]);
 
 
-                    model.images = JsonConvert.ToString(data["images"]);
+                    model.images = JsonConvert.SerializeObject(data["images"]);
                     model.name = (string)data["name"];
                     model.phone = (string)data.SelectToken("contact.phone");
                     model.email = (string)data.SelectToken("contact.email");
@@ -1354,7 +1354,7 @@ namespace APIConsole.Supplier.Services
                     model.longitude = (string)data.SelectToken("coordinates.longitude");
                     model.latitude = (string)data.SelectToken("coordinates.latitude");
                     model.checkIn = (string)data.SelectToken("settings.checkIn");
-                    model.checkIn = (string)data.SelectToken("settings.checkOut");
+                    model.checkOut = (string)data.SelectToken("settings.checkOut");
 
               
 

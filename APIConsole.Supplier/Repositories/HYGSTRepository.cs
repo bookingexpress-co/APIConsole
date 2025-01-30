@@ -277,7 +277,7 @@ namespace APIConsole.Supplier.Repositories
         public int UploadHotelDetail(HYGSTHotelDetail model)
         {
 
-            SqlParameter[] pList = new SqlParameter[2];
+            SqlParameter[] pList = new SqlParameter[13];
             var flag = new SqlParameter();
             flag.ParameterName = "@flag";
             flag.Direction = ParameterDirection.Input;
@@ -310,7 +310,7 @@ namespace APIConsole.Supplier.Repositories
             postcode.ParameterName = "@postcode";
             postcode.Direction = ParameterDirection.Input;
             postcode.SqlDbType = SqlDbType.NVarChar;
-            postcode.Value = model.images;
+            postcode.Value = model.postcode;
             pList[4] = postcode;
 
             var longitude = new SqlParameter();
