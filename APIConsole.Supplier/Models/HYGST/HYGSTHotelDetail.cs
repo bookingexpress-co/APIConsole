@@ -22,6 +22,8 @@ namespace APIConsole.Supplier.Models.HYGST
         public string checkIn { get; set; }
         public string checkOut { get; set; }
         public string hotel_id { get; set; }
+        public int isTest { get; set; }
+        
 
     }
 }

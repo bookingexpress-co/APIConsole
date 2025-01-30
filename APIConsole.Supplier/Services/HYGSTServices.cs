@@ -1302,6 +1302,7 @@ namespace APIConsole.Supplier.Services
             int result = 0;
             try
             {
+                int count = 0;
                 var reqObj = new RequestModel();
                 reqObj.StartTime = DateTime.Now;
                 reqObj.CallType = ApiAction.Hotels;
@@ -1310,9 +1311,25 @@ namespace APIConsole.Supplier.Services
                 reqObj.ResponseStr = repo.GetStaticResponse(reqObj);
                 if (!string.IsNullOrEmpty(reqObj.ResponseStr))
                 {
-
                     result = repo.UploadJson(reqObj.ResponseStr);
+                    dynamic data = JsonConvert.DeserializeObject(reqObj.ResponseStr);
+                    foreach (JToken item in data)
+                    {
+                        var hotelId = (string)item["hotel_id"];
+                       var x= GetHotelInfo(hotelId);
 
+                        if(x>0)
+                        {
+                            count++;
+                            Console.WriteLine("sucessfully update Hotel Id: {0},  Count :{1}", hotelId, count);
+                        
+                        }
+                        else
+                        {
+                            Console.WriteLine("Unable to update Hotel Id: {0}", hotelId);
+                        }
+                        
+                    }
                 }
             }
             catch
@@ -1351,6 +1368,9 @@ namespace APIConsole.Supplier.Services
                     model.checkIn = (string)data.SelectToken("settings.checkIn");
                     model.checkOut = (string)data.SelectToken("settings.checkOut");
                     model.hotel_id = hotelId;
+
+                    model.isTest = (int)data["isTest"];
+                    
                     result = repo.UploadHotelDetail(model);
                 }
             }

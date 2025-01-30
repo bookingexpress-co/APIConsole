@@ -277,7 +277,7 @@ namespace APIConsole.Supplier.Repositories
         public int UploadHotelDetail(HYGSTHotelDetail model)
         {
 
-            SqlParameter[] pList = new SqlParameter[13];
+            SqlParameter[] pList = new SqlParameter[14];
             var flag = new SqlParameter();
             flag.ParameterName = "@flag";
             flag.Direction = ParameterDirection.Input;
@@ -369,6 +369,15 @@ namespace APIConsole.Supplier.Repositories
             checkOut.SqlDbType = SqlDbType.NVarChar;
             checkOut.Value = model.checkOut;
             pList[12] = checkOut;
+
+            var isTest = new SqlParameter();
+            isTest.ParameterName = "@isTest";
+            isTest.Direction = ParameterDirection.Input;
+            isTest.SqlDbType = SqlDbType.Int;
+            isTest.Value = model.isTest;
+            pList[13] = isTest;
+
+            
 
             string _constr = ConfigurationManager.ConnectionStrings["INGMContext.Static"].ConnectionString;
             var _dataAcess = new TravayooDataAcess(_constr);
