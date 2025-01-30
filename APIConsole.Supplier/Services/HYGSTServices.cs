@@ -1338,12 +1338,7 @@ namespace APIConsole.Supplier.Services
                 if (!string.IsNullOrEmpty(reqObj.ResponseStr))
                 {
                     var data = JsonConvert.DeserializeObject<dynamic>(reqObj.ResponseStr);
-
-
-
                     model.descriptions = JsonConvert.SerializeObject(data["descriptions"]);
-
-
                     model.images = JsonConvert.SerializeObject(data["images"]);
                     model.name = (string)data["name"];
                     model.phone = (string)data.SelectToken("contact.phone");
@@ -1355,14 +1350,11 @@ namespace APIConsole.Supplier.Services
                     model.latitude = (string)data.SelectToken("coordinates.latitude");
                     model.checkIn = (string)data.SelectToken("settings.checkIn");
                     model.checkOut = (string)data.SelectToken("settings.checkOut");
-
-              
-
                     model.hotel_id = hotelId;
                     result = repo.UploadHotelDetail(model);
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 result = 0;
             }
