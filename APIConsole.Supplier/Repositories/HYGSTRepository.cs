@@ -5,6 +5,7 @@ using APIConsole.Supplier.Models.Common;
 using APIConsole.Supplier.Models.HYGST;
 using RestSharp;
 using System;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
@@ -247,6 +248,29 @@ namespace APIConsole.Supplier.Repositories
             return responseBody;
         }
 
+
+        public List<string> GetHotelListForupdate()
+        {
+            var lst =new List<string>();
+            SqlParameter[] pList = new SqlParameter[1];
+            var flag = new SqlParameter();
+            flag.ParameterName = "@flag";
+            flag.Direction = ParameterDirection.Input;
+            flag.SqlDbType = SqlDbType.Int;
+            flag.Value = 2;
+            pList[0] = flag;           
+
+            string _constr = ConfigurationManager.ConnectionStrings["INGMContext.Static"].ConnectionString;
+            var _dataAcess = new TravayooDataAcess(_constr);
+
+            var dt = _dataAcess.Get("HYGSTProc", pList);
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                string hotelId = dt.Rows[i]["hotel_id"].ToString();
+                lst.Add(hotelId);
+            }
+            return lst;
+        }
 
 
 

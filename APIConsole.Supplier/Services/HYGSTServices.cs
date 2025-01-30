@@ -1316,19 +1316,19 @@ namespace APIConsole.Supplier.Services
                     foreach (JToken item in data)
                     {
                         var hotelId = (string)item["hotel_id"];
-                       var x= GetHotelInfo(hotelId);
+                        var x = GetHotelInfo(hotelId);
 
-                        if(x>0)
+                        if (x > 0)
                         {
                             count++;
                             Console.WriteLine("sucessfully update Hotel Id: {0},  Count :{1}", hotelId, count);
-                        
+
                         }
                         else
                         {
                             Console.WriteLine("Unable to update Hotel Id: {0}", hotelId);
                         }
-                        
+
                     }
                 }
             }
@@ -1370,7 +1370,7 @@ namespace APIConsole.Supplier.Services
                     model.hotel_id = hotelId;
 
                     model.isTest = (int)data["isTest"];
-                    
+
                     result = repo.UploadHotelDetail(model);
                 }
             }
@@ -1383,7 +1383,24 @@ namespace APIConsole.Supplier.Services
 
         }
 
-
+        public int GetHotelListForUpdate()
+        {
+            int result = 0;
+            var hotelList = repo.GetHotelListForupdate();
+            foreach (var item in hotelList)
+            {
+                try
+                {
+                    var x = GetHotelInfo(item);
+                    result =1;
+                }
+                catch (Exception ex)
+                {
+                    result = 0;
+                }
+            }
+            return result;
+        }
 
         #region Dispose
         /// <summary>
